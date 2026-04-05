@@ -23,11 +23,6 @@ jest.mock("next/navigation", () => ({
 
 jest.mock("../../services/create-order");
 jest.mock("../../helpers/masks");
-jest.mock("../../components/ui/toaster", () => ({
-  toaster: {
-    create: jest.fn(),
-  },
-}));
 
 const mockCreateOrder = createOrder as jest.MockedFunction<typeof createOrder>;
 const mockFormatBRL = masks.formatBRL as jest.MockedFunction<

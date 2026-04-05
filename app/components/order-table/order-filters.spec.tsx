@@ -103,6 +103,7 @@ describe("OrderFilters", () => {
         side: "BUY",
         status: "OPEN",
         date: "1990-12-30",
+        page: 1,
       });
     });
     expect(mockedFetchOrders).toHaveBeenCalledWith({

@@ -27,6 +27,7 @@ export function OrderFilters({
   ordersLength: number;
 }) {
   const [page, setPage] = useState(1);
+  const [activeFilters, setActiveFilters] = useState<OrderFiltersTypes>({});
 
   const sideCollection = createListCollection({
     items: [
@@ -57,7 +58,10 @@ export function OrderFilters({
   });
 
   const onFilterSubmit = (filters: OrderFiltersTypes) => {
-    filterMutation.mutate(filters);
+    const nextFilters = { ...filters };
+    setActiveFilters(nextFilters);
+    setPage(1);
+    filterMutation.mutate({ ...nextFilters, page: 1 });
   };
 
   function onClearFilters() {
@@ -68,6 +72,9 @@ export function OrderFilters({
         setValue(key as keyof OrderFiltersTypes, "");
       }
     });
+
+    setActiveFilters({});
+    setPage(1);
   }
 
   return (
@@ -186,8 +193,9 @@ export function OrderFilters({
             size="xs"
             variant="ghost"
             onClick={() => {
-              setPage((p) => Math.max(1, p - 1));
-              onFilterSubmit({ page: page - 1 });
+              const nextPage = Math.max(1, page - 1);
+              setPage(nextPage);
+              filterMutation.mutate({ ...activeFilters, page: nextPage });
             }}
             disabled={page === 1}
           >
@@ -201,8 +209,9 @@ export function OrderFilters({
             size="xs"
             variant="ghost"
             onClick={() => {
-              setPage((p) => p + 1);
-              onFilterSubmit({ page: page + 1 });
+              const nextPage = page + 1;
+              setPage(nextPage);
+              filterMutation.mutate({ ...activeFilters, page: nextPage });
             }}
             disabled={ordersLength < 5}
           >

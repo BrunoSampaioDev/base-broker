@@ -6,11 +6,6 @@ import { cancelOrder } from "@/app/services/cancel-order";
 import { toaster } from "@/app/components/ui/toaster";
 
 jest.mock("../../services/cancel-order");
-jest.mock("../../components/ui/toaster", () => ({
-  toaster: {
-    create: jest.fn(),
-  },
-}));
 
 const mockCancelOrder = cancelOrder as jest.MockedFunction<typeof cancelOrder>;
 

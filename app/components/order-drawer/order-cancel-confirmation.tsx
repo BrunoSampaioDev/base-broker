@@ -33,7 +33,6 @@ export function CancelOrderConfirmation({
   const cancelOrderMutation = useMutation({
     mutationFn: (orderId: string) => cancelOrder(orderId),
     onSuccess: () => {
-      queryClient.refetchQueries({ queryKey: ["orders"] });
       queryClient.refetchQueries({ queryKey: ["history", orderId] });
       toaster.create({
         title: "Ordem cancelada com sucesso",

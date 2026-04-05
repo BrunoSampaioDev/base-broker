@@ -4,8 +4,21 @@ import { OrdersTableContent } from "./orders-table-content";
 import { withSetup } from "@/app/test/helpers/with-setup";
 import { order } from "@/app/test/mocks/order-test-data-builder";
 import type { Order } from "@/app/types/order";
+import { toaster } from "@/app/components/ui/toaster";
 
 describe("OrdersTableContent", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    if (!navigator.clipboard) {
+      Object.defineProperty(navigator, "clipboard", {
+        value: {
+          writeText: async () => undefined,
+        },
+        configurable: true,
+      });
+    }
+  });
+
   it("should render the order table content with the correct data", () => {
     render(withSetup(<OrdersTableContent data={[order.build()]} />));
     expect(screen.getByText("PETR4")).toBeInTheDocument();
@@ -86,5 +99,28 @@ describe("OrdersTableContent", () => {
     expect(rows[0].querySelectorAll("td")[1]).toHaveTextContent("VALE3");
     expect(rows[1].querySelectorAll("td")[1]).toHaveTextContent("PETR4");
     expect(rows[2].querySelectorAll("td")[1]).toHaveTextContent("BBDC4");
+  });
+
+  it("should copy order id and show success toast when clicking id", async () => {
+    const user = userEvent.setup();
+    const mockToasterCreate = toaster.create as jest.Mock;
+    const writeTextSpy = jest
+      .spyOn(navigator.clipboard, "writeText")
+      .mockResolvedValue(undefined);
+    const testOrder = order
+      .withId("ad89c88e-37a3-475c-885e-0729caa7736r")
+      .build();
+
+    render(withSetup(<OrdersTableContent data={[testOrder]} />));
+
+    await user.click(screen.getByRole("button", { name: "ad89c88e" }));
+
+    expect(writeTextSpy).toHaveBeenCalledWith(testOrder.id);
+    expect(mockToasterCreate).toHaveBeenCalledWith({
+      title: "ID da ordem copiado para área de transferência",
+      type: "success",
+    });
+
+    writeTextSpy.mockRestore();
   });
 });
