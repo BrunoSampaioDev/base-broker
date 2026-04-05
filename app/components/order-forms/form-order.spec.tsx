@@ -2,8 +2,9 @@ import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { OrderForm } from "./form-order";
 import { withSetup } from "@/app/test/helpers/with-setup";
-import * as createOrderModule from "@/app/services/create-order";
-import * as masksModule from "@/app/helpers/masks";
+import { createOrder } from "@/app/services/create-order";
+import { masks } from "@/app/helpers/masks";
+import { toaster } from "@/app/components/ui/toaster";
 
 const mockReplace = jest.fn();
 
@@ -22,12 +23,15 @@ jest.mock("next/navigation", () => ({
 
 jest.mock("../../services/create-order");
 jest.mock("../../helpers/masks");
+jest.mock("../../components/ui/toaster", () => ({
+  toaster: {
+    create: jest.fn(),
+  },
+}));
 
-const mockCreateOrder = createOrderModule.createOrder as jest.MockedFunction<
-  typeof createOrderModule.createOrder
->;
-const mockFormatBRL = masksModule.masks.formatBRL as jest.MockedFunction<
-  typeof masksModule.masks.formatBRL
+const mockCreateOrder = createOrder as jest.MockedFunction<typeof createOrder>;
+const mockFormatBRL = masks.formatBRL as jest.MockedFunction<
+  typeof masks.formatBRL
 >;
 
 describe("OrderForm", () => {
@@ -321,5 +325,52 @@ describe("OrderForm", () => {
       expect(screen.getByText("Ticker não encontrado")).toBeInTheDocument();
     });
     expect(mockReplace).not.toHaveBeenCalled();
+  });
+
+  it("should call toaster.create on successful order creation", async () => {
+    const user = userEvent.setup();
+    const mockToasterCreate = jest.spyOn(toaster, "create");
+
+    render(withSetup(<OrderForm side="BUY" />));
+
+    await user.type(screen.getByPlaceholderText("Ex: TAEE11"), "PETR4");
+    await user.type(screen.getByPlaceholderText("Ex: 1.234,56"), "100");
+    await user.type(screen.getByPlaceholderText("Ex: 20"), "50");
+
+    await user.click(screen.getByRole("button"));
+
+    await waitFor(() => {
+      expect(mockToasterCreate).toHaveBeenCalledWith({
+        title: "Ordem criada com sucesso",
+        description: expect.stringContaining("PETR4"),
+        type: "success",
+      });
+    });
+
+    mockToasterCreate.mockRestore();
+  });
+
+  it("should call toaster.create on order creation error", async () => {
+    const user = userEvent.setup();
+    const mockToasterCreate = jest.spyOn(toaster, "create");
+    mockCreateOrder.mockRejectedValue(new Error("Order creation failed"));
+
+    render(withSetup(<OrderForm side="BUY" />));
+
+    await user.type(screen.getByPlaceholderText("Ex: TAEE11"), "PETR4");
+    await user.type(screen.getByPlaceholderText("Ex: 1.234,56"), "100");
+    await user.type(screen.getByPlaceholderText("Ex: 20"), "50");
+
+    await user.click(screen.getByRole("button"));
+
+    await waitFor(() => {
+      expect(mockToasterCreate).toHaveBeenCalledWith({
+        title: "Erro ao criar ordem",
+        description: expect.stringContaining("PETR4"),
+        type: "error",
+      });
+    });
+
+    mockToasterCreate.mockRestore();
   });
 });
