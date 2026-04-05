@@ -551,8 +551,8 @@
       "side": "BUY",
       "price": 43.09,
       "quantity": 200,
-      "remaining": 200,
-      "status": "OPEN",
+      "remaining": 0,
+      "status": "EXECUTED",
       "createdAt": "2026-04-04T17:20:03.699Z"
     },
     {
@@ -571,8 +571,8 @@
       "side": "BUY",
       "price": 48.15,
       "quantity": 200,
-      "remaining": 200,
-      "status": "OPEN",
+      "remaining": 0,
+      "status": "EXECUTED",
       "createdAt": "2026-04-04T17:21:27.408Z"
     },
     {
@@ -601,8 +601,8 @@
       "side": "BUY",
       "price": 84,
       "quantity": 1000,
-      "remaining": 200,
-      "status": "PARTIAL",
+      "remaining": 0,
+      "status": "EXECUTED",
       "createdAt": "2026-04-04T17:22:53.939Z"
     },
     {
@@ -611,8 +611,8 @@
       "side": "BUY",
       "price": 83.5,
       "quantity": 240,
-      "remaining": 240,
-      "status": "OPEN",
+      "remaining": 0,
+      "status": "EXECUTED",
       "createdAt": "2026-04-04T17:23:59.161Z"
     },
     {
@@ -661,7 +661,7 @@
       "side": "SELL",
       "price": 48.9,
       "quantity": 210,
-      "remaining": 158,
+      "remaining": 148,
       "status": "PARTIAL",
       "createdAt": "2026-04-04T17:29:24.444Z"
     },
@@ -741,8 +741,8 @@
       "side": "SELL",
       "price": 20,
       "quantity": 340,
-      "remaining": 340,
-      "status": "OPEN",
+      "remaining": 0,
+      "status": "EXECUTED",
       "createdAt": "2026-04-04T17:32:11.086Z"
     },
     {
@@ -751,8 +751,8 @@
       "side": "SELL",
       "price": 21,
       "quantity": 300,
-      "remaining": 300,
-      "status": "OPEN",
+      "remaining": 150,
+      "status": "PARTIAL",
       "createdAt": "2026-04-04T17:32:20.048Z"
     },
     {
@@ -834,6 +834,1996 @@
       "remaining": 0,
       "status": "EXECUTED",
       "createdAt": "2026-04-05T02:54:48.485Z"
+    },
+    {
+      "id": "ddac82de-d835-443a-8bbe-8f12c3fd7c33",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:14:57.447Z"
+    },
+    {
+      "id": "ddb9e116-c925-40b2-a654-fc59afcd75f7",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:15:11.289Z"
+    },
+    {
+      "id": "07b0ec69-75f9-4281-aabd-f7820e10786f",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 50,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:15:25.029Z"
+    },
+    {
+      "id": "e8fc3fa2-3a3c-45c0-b701-c470f54bc4b0",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 50,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:15:38.949Z"
+    },
+    {
+      "id": "1f8d94f7-9ad0-44c3-b73e-32c9cae73a06",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:16:01.388Z"
+    },
+    {
+      "id": "048ccabb-ec1e-4289-9032-b07d828fd7ae",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:16:03.080Z"
+    },
+    {
+      "id": "4af778d1-f8c6-46d6-8ae0-d5003bc42916",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:04.452Z"
+    },
+    {
+      "id": "08f25b68-951d-4f31-9066-efcc09512568",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:06.067Z"
+    },
+    {
+      "id": "e7e07044-8173-41bb-82bc-e19105cf03b8",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:16:07.752Z"
+    },
+    {
+      "id": "009554e4-b83e-4c1e-9000-2327a358edf3",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:11.841Z"
+    },
+    {
+      "id": "fd19a533-3b7e-4476-8bc8-fadda6b0736e",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:13.416Z"
+    },
+    {
+      "id": "736f4506-85c0-4779-af25-29c4b7ffaa73",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:17.300Z"
+    },
+    {
+      "id": "f927f9ba-3010-4247-873a-338c85bec51c",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:18.995Z"
+    },
+    {
+      "id": "52c7eb16-1b1c-44a6-91eb-ea8bb014fb9c",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:23.038Z"
+    },
+    {
+      "id": "3958410e-801c-4255-8be4-e8dbd796280d",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:24.716Z"
+    },
+    {
+      "id": "3fd3982d-fd3c-4cd2-8ed2-ea88589960e3",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:38.723Z"
+    },
+    {
+      "id": "37516f2e-1a86-4396-a602-2390d3a19cc2",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:40.458Z"
+    },
+    {
+      "id": "0a29ce0b-9769-4c60-81f6-2d86eb33462d",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:54.385Z"
+    },
+    {
+      "id": "0357282e-c578-4d5c-a48b-9448d8469798",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:16:56.022Z"
+    },
+    {
+      "id": "bc191c2c-9a4e-4c5f-af8e-51298398c5e5",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 110,
+      "status": "PARTIAL",
+      "createdAt": "2026-04-05T04:17:00.132Z"
+    },
+    {
+      "id": "4824b40d-61e9-440a-937e-aa6e2c65aef2",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:17:01.855Z"
+    },
+    {
+      "id": "8366ecdf-9d44-474f-95a2-7b6520cbe702",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 25,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:17:05.973Z"
+    },
+    {
+      "id": "d39fe2a5-880c-4bf5-9056-e72ef0414e13",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 25,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:17:19.989Z"
+    },
+    {
+      "id": "a1cc8ecf-c9ff-438f-9907-26bafdfe2192",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:17:33.988Z"
+    },
+    {
+      "id": "01d45549-34d9-4b83-837c-8345ea54f7e0",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:17:48.976Z"
+    },
+    {
+      "id": "ec85363f-6506-4833-8d3e-4fa5c69fb9fc",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:18:03.767Z"
+    },
+    {
+      "id": "a258cc18-18e1-40c4-a288-5ad0c2b33895",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:18:18.834Z"
+    },
+    {
+      "id": "576e24c6-1fd2-4e94-92e7-39d9eb7c4b24",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:18:33.768Z"
+    },
+    {
+      "id": "56007dce-7b6c-47b3-9106-a377e68c7eaa",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:18:48.359Z"
+    },
+    {
+      "id": "84d2c609-a560-4815-84de-14c92b1503e0",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:19:03.005Z"
+    },
+    {
+      "id": "43d21c0a-fab5-4931-afc3-3471e7e6c7fc",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:29:52.380Z"
+    },
+    {
+      "id": "9e8dd7c3-1c0a-4f33-8b43-103fd1414748",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 50,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:29:56.429Z"
+    },
+    {
+      "id": "7a400251-fb4f-460c-a646-ff959ca51f64",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 50,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:30:12.406Z"
+    },
+    {
+      "id": "6ce69226-bfa2-4792-9fd4-1c89a543958a",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:30:36.562Z"
+    },
+    {
+      "id": "ef8668cc-c864-490a-b564-24e99065bff4",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:30:38.131Z"
+    },
+    {
+      "id": "25d6f8c3-58e6-4893-9189-047638999793",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:30:39.669Z"
+    },
+    {
+      "id": "8e182ff3-a876-432c-b865-d20a4a137477",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:30:41.126Z"
+    },
+    {
+      "id": "2f569dde-817b-4b6d-8f53-0c9bc1e8bb47",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:30:42.745Z"
+    },
+    {
+      "id": "5ebc45c0-a290-4e9b-8a83-2a378dfba904",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:30:47.191Z"
+    },
+    {
+      "id": "aa3294fd-31ac-4006-b268-cf62eddd4a7b",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:30:48.914Z"
+    },
+    {
+      "id": "75102cc1-c68f-4b5a-97df-68d378a3a164",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:30:52.635Z"
+    },
+    {
+      "id": "ad19e9b1-ce5c-4c0e-8587-d36f985ad0ba",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 60,
+      "status": "PARTIAL",
+      "createdAt": "2026-04-05T04:30:54.460Z"
+    },
+    {
+      "id": "288cf97d-33df-488a-ac57-309468f9f264",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:30:58.791Z"
+    },
+    {
+      "id": "e47c8bde-c9fa-4aaf-8b6c-2696aae77eec",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:31:00.452Z"
+    },
+    {
+      "id": "e22cd89c-836d-4d9f-8c26-ec3641886b8f",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 25,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:31:04.075Z"
+    },
+    {
+      "id": "f0d2bda1-ac0a-4c2c-81ae-21f736508db4",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 25,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:31:17.968Z"
+    },
+    {
+      "id": "d57c441f-e612-4071-984c-21cb14ff5958",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:31:32.505Z"
+    },
+    {
+      "id": "6c9305af-8fb1-40a2-b255-5f83a76e07df",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:31:36.828Z"
+    },
+    {
+      "id": "153b7fee-a976-4a46-b294-c5cacaf22eec",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:31:51.265Z"
+    },
+    {
+      "id": "79ed202f-922d-42f6-8343-3bea32b121b7",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:31:55.400Z"
+    },
+    {
+      "id": "8328e607-bee7-494f-b477-ddd0410b4304",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:32:09.808Z"
+    },
+    {
+      "id": "a213c024-bc2e-4c27-8110-d44c356ce8f4",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:32:13.987Z"
+    },
+    {
+      "id": "cd1f3c6d-dc61-42ec-bd13-c152692edad4",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:35:36.889Z"
+    },
+    {
+      "id": "6ada1f66-5b6b-4410-8548-fb3795eb0d15",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:35:53.479Z"
+    },
+    {
+      "id": "4ca31b12-8357-4f92-9d96-4df3cdcdf7e6",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:35:55.411Z"
+    },
+    {
+      "id": "2157598e-cb78-4034-8e45-4a8e66b676f1",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:35:57.458Z"
+    },
+    {
+      "id": "110c05b1-d861-4eca-b35e-fa018a58d642",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:35:58.953Z"
+    },
+    {
+      "id": "ea887e14-72f0-4902-a76c-24d2832d1b0c",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:00.657Z"
+    },
+    {
+      "id": "bd50cecc-f9f5-4feb-a66a-c6571a7b699b",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:36:04.505Z"
+    },
+    {
+      "id": "3c1140db-cc75-4419-98ee-0f77139878de",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:36:06.016Z"
+    },
+    {
+      "id": "e95d790c-6c0a-4ccc-83db-6dca19908f2a",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:36:12.732Z"
+    },
+    {
+      "id": "db71587a-18fa-4e00-aada-ef469ec8c89c",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:14.581Z"
+    },
+    {
+      "id": "5a97a141-6022-4860-a5b5-331922b783eb",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:18.524Z"
+    },
+    {
+      "id": "40ddce53-f020-418b-874a-084cd2c79bf9",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:36:20.051Z"
+    },
+    {
+      "id": "2de50554-8fa3-4b94-9e50-5e31524d5cfa",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:23.757Z"
+    },
+    {
+      "id": "7e788471-8763-4b3c-8cfb-6253148ac9c3",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:41.781Z"
+    },
+    {
+      "id": "deb994b1-5c1b-4110-a51e-52d24672f188",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:43.409Z"
+    },
+    {
+      "id": "a1f5b0da-2d29-445c-8694-5d6d6feb1ebe",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:36:56.800Z"
+    },
+    {
+      "id": "120c8643-08f6-47f4-9b04-98ccd6a8fed8",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:37:11.057Z"
+    },
+    {
+      "id": "d01849d7-2589-4747-8fc8-d56319e9c0ab",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:37:25.308Z"
+    },
+    {
+      "id": "3aaab3f8-01ca-4cf0-9a29-4d66473ba8d3",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:37:30.180Z"
+    },
+    {
+      "id": "c9a94ed3-beba-4f65-ac71-1f8580caec7a",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:37:34.435Z"
+    },
+    {
+      "id": "2c952746-c075-42eb-9ce7-32f61252a383",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:37:39.209Z"
+    },
+    {
+      "id": "3a1e66d3-2276-4f57-9e77-e49316ea4982",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:37:43.323Z"
+    },
+    {
+      "id": "76964e22-6a95-4f83-89a8-cba584793d21",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:03.497Z"
+    },
+    {
+      "id": "b7fd3d3a-123e-4bfe-b392-261568cf47a0",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:19.529Z"
+    },
+    {
+      "id": "3a2f1378-b1e0-48f2-a29a-45d1f9ec21be",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:21.039Z"
+    },
+    {
+      "id": "b5724bcd-91a1-4f68-b1aa-a1cd3e6a187e",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:22.570Z"
+    },
+    {
+      "id": "d2682087-21dc-4e0c-84da-97da1c270144",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:40:24.090Z"
+    },
+    {
+      "id": "52f9f87e-d69a-4a20-be6e-9d4b6b1afa98",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:25.611Z"
+    },
+    {
+      "id": "a751cc89-85c2-4207-b319-6128ad356670",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:29.599Z"
+    },
+    {
+      "id": "ebcdc5ff-978f-4f2b-af0f-1358314f915b",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:40:31.883Z"
+    },
+    {
+      "id": "8447d297-7981-45f4-b086-0326f77dfd8d",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:36.816Z"
+    },
+    {
+      "id": "7613479d-d4e3-4b1f-933a-598d6dfd3c67",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:38.661Z"
+    },
+    {
+      "id": "09fe80b4-efd4-43ac-83cd-aa84c3eff3f0",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:42.753Z"
+    },
+    {
+      "id": "550fe379-b512-4026-bcd4-b8002033d6ac",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:40:44.354Z"
+    },
+    {
+      "id": "1dc6f3f1-e57e-4976-873e-bbd060cfba14",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:40:47.984Z"
+    },
+    {
+      "id": "1dd18435-5c54-4760-93c8-fc77a33b55d5",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:41:02.834Z"
+    },
+    {
+      "id": "1dcabb60-9e35-4b55-93b3-21d1c14dbe6b",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:41:17.639Z"
+    },
+    {
+      "id": "16ef3adc-6ec3-48df-80d7-a2e34ec95d16",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:41:27.135Z"
+    },
+    {
+      "id": "0156ba54-c271-4072-90f8-b198477aa947",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:41:36.694Z"
+    },
+    {
+      "id": "ef3c293d-66c9-41bc-8c39-82cf6568c06b",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:41:41.240Z"
+    },
+    {
+      "id": "a731a16f-8b79-4a5a-a037-ac70979f0770",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:41:55.949Z"
+    },
+    {
+      "id": "13f2066e-b547-41e6-b7d8-9ea6be91a4e5",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:42:00.320Z"
+    },
+    {
+      "id": "49d83d51-5965-4f63-b774-dee05cc40c6d",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:42:04.550Z"
+    },
+    {
+      "id": "11c7370e-06fe-455a-8bfb-8380add868cc",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:42:08.865Z"
+    },
+    {
+      "id": "1c70badb-f618-4534-9636-2168faf54fa8",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:44:58.162Z"
+    },
+    {
+      "id": "c7aa67c7-2357-46b6-8e05-72ea8a6d1f28",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:14.115Z"
+    },
+    {
+      "id": "70d3a5c0-d1a0-430b-8140-2ef1599d49c8",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:15.564Z"
+    },
+    {
+      "id": "bb0d250d-71d2-40eb-88dd-ca625488be06",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:16.869Z"
+    },
+    {
+      "id": "bd8a0d59-ffdf-4aa0-a070-96a93554a60c",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:45:18.309Z"
+    },
+    {
+      "id": "27a0017b-8660-4fad-b512-39b7ddd2e049",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:19.730Z"
+    },
+    {
+      "id": "9823c6b7-64f0-4e68-a4cb-6026e011429e",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:23.549Z"
+    },
+    {
+      "id": "a476c6f3-de87-41ea-b069-1ce61fa30415",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:45:25.255Z"
+    },
+    {
+      "id": "bc18e171-c8d0-4e32-849e-6f084831fa64",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:29.249Z"
+    },
+    {
+      "id": "10513c67-55ff-4fb8-8f5a-e5fad748474b",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:30.951Z"
+    },
+    {
+      "id": "6b388678-a372-4e2f-88ed-97184db6b72b",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:34.680Z"
+    },
+    {
+      "id": "c0bb13bf-3b03-43df-9839-8f9877801be3",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:45:36.476Z"
+    },
+    {
+      "id": "793ec630-3728-4d61-8c75-3e789bb9ff10",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T04:45:40.051Z"
+    },
+    {
+      "id": "7d5cdcd7-baa7-44c5-bcf4-f81b7c8616c3",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:44.929Z"
+    },
+    {
+      "id": "52227adc-f35b-46a1-93f6-42e89e131630",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:49.032Z"
+    },
+    {
+      "id": "c970c332-2a8f-481f-9c74-9799789166f0",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:45:53.187Z"
+    },
+    {
+      "id": "d7e2ce02-f744-4974-a340-f7085f1bc528",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:46:07.987Z"
+    },
+    {
+      "id": "2bcabe3c-aeb5-4364-8b71-e816d9526083",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:46:12.199Z"
+    },
+    {
+      "id": "505341a5-2d37-4954-a479-fe155692875e",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:46:16.310Z"
+    },
+    {
+      "id": "f995e893-a311-42d3-8904-9cc988877ec7",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:46:20.317Z"
+    },
+    {
+      "id": "f76db1cd-1ff4-4807-ae64-c74739177889",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:12.956Z"
+    },
+    {
+      "id": "fd02c8f3-1bb1-466b-b541-001b04c4bdd2",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:29.781Z"
+    },
+    {
+      "id": "2fa5bbe3-e6d0-4207-ae2f-f563445d78fd",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:31.272Z"
+    },
+    {
+      "id": "05c25cb2-ecef-4bba-99d2-80994c37f22b",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:32.737Z"
+    },
+    {
+      "id": "d56adbea-2fef-463d-a35d-8435006db69d",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:47:34.229Z"
+    },
+    {
+      "id": "61dfc0ff-3b25-49b6-a61a-0d0d937d3519",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:36.422Z"
+    },
+    {
+      "id": "484c1e35-f25d-46d2-888d-9ba36370ddb6",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:40.332Z"
+    },
+    {
+      "id": "59589ac1-78f2-4b2c-8681-02f01ee9fe9a",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:47:42.134Z"
+    },
+    {
+      "id": "904278cd-a412-4824-8896-c6b55759716f",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:45.946Z"
+    },
+    {
+      "id": "c9d686e2-702d-477a-aaaf-b46e3853b77a",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:47.622Z"
+    },
+    {
+      "id": "d4bcf3c8-3930-4306-844d-20c3f93e6cab",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:47:51.662Z"
+    },
+    {
+      "id": "da131b36-6497-4b23-8c89-9b7ab2510afd",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T04:47:53.459Z"
+    },
+    {
+      "id": "f0c7e06e-acf7-4767-be45-8bcacbc59542",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T04:47:57.100Z"
+    },
+    {
+      "id": "ac40efa1-f34e-4a3b-890f-d944198a70ba",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:01.819Z"
+    },
+    {
+      "id": "11a41101-decd-4375-8e5b-e5cdd6f9b958",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:06.012Z"
+    },
+    {
+      "id": "00f83c01-e519-4565-be94-7f10f4e2c793",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:10.861Z"
+    },
+    {
+      "id": "3a122f2f-128f-4e20-a308-72e1e76fc035",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:15.614Z"
+    },
+    {
+      "id": "515232c4-9b67-4e4c-919d-5755c0f8b02f",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:19.859Z"
+    },
+    {
+      "id": "d81f82f6-8814-4610-a1de-8ac8ed684e93",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:24.158Z"
+    },
+    {
+      "id": "25c710b8-5c5e-4906-8042-92e6d82a7fef",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:43.140Z"
+    },
+    {
+      "id": "6684dcde-7642-4ebe-85a4-8680b8c2351e",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:48:58.483Z"
+    },
+    {
+      "id": "d38fd30a-074a-42e6-93cb-2438515c7e9e",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:49:08.331Z"
+    },
+    {
+      "id": "e2bf9b97-ce9e-4762-977e-5081d489e8d6",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T04:49:15.302Z"
+    },
+    {
+      "id": "7671b8f2-0cdb-4faa-b094-0c9ea77d30c9",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:27:42.940Z"
+    },
+    {
+      "id": "a98139d7-f432-412c-bd54-99088ea1fa95",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:27:59.265Z"
+    },
+    {
+      "id": "15494521-1149-43cc-8849-4377791ef671",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:00.648Z"
+    },
+    {
+      "id": "74f9c404-4975-4544-9a33-affdb1140e57",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:02.107Z"
+    },
+    {
+      "id": "bf6e5b9e-108b-4b36-9f7b-b37838ada860",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:28:03.612Z"
+    },
+    {
+      "id": "5a120d16-1417-41ec-9b37-365999dbd6ff",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:05.130Z"
+    },
+    {
+      "id": "5662b9a3-bfb2-41d5-82a1-1d5f1c87b668",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:09.175Z"
+    },
+    {
+      "id": "620aff8e-040d-4462-9da4-9086fcd3d30b",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:28:11.452Z"
+    },
+    {
+      "id": "89ed6ef8-50f8-4374-81c8-5871aadc3dd3",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:15.337Z"
+    },
+    {
+      "id": "2069d49e-e7a4-420f-be88-2569f3415fd7",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:17.181Z"
+    },
+    {
+      "id": "5d5c7635-487e-45af-bfd7-2aff7e143682",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:20.997Z"
+    },
+    {
+      "id": "638c3919-1f29-4066-ae60-bb9e8f848d53",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:28:22.749Z"
+    },
+    {
+      "id": "6b9cafa2-b1f4-4cdd-8274-18867125b698",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T16:28:26.457Z"
+    },
+    {
+      "id": "62a8ef71-a210-48fb-bc72-efe97d49ebdc",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:31.145Z"
+    },
+    {
+      "id": "be1bd1be-6f70-427d-bb19-9868eb8a3b4b",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:35.207Z"
+    },
+    {
+      "id": "8cb94586-1e9f-4558-8350-e8bf60bdf448",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:39.219Z"
+    },
+    {
+      "id": "29a7536e-a788-42a7-ac9c-5dfb3361b8d7",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:43.473Z"
+    },
+    {
+      "id": "96bd464e-c19a-40b3-87ce-deaed53afdf2",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:47.654Z"
+    },
+    {
+      "id": "ace40dc5-1bf4-4e8e-a705-5187445d66de",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:28:51.992Z"
+    },
+    {
+      "id": "5c6fa538-bdd9-4d84-be44-796723357b34",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:37:49.778Z"
+    },
+    {
+      "id": "2e47bd71-050c-4bd3-b062-c8efa1a9a9f4",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:06.134Z"
+    },
+    {
+      "id": "348d837f-5093-4599-8460-abb6c669f74f",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:07.451Z"
+    },
+    {
+      "id": "2704ef20-f0f4-431d-a514-5e7d4ca291f2",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:08.675Z"
+    },
+    {
+      "id": "28ced6c6-5a69-41fe-8be2-728bd90ff6cc",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:38:10.288Z"
+    },
+    {
+      "id": "57ec4bb1-bfea-4dfb-a97c-ead7d61a5eb4",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:11.777Z"
+    },
+    {
+      "id": "32c49ea7-ab1f-48f8-a31d-1c7ca69ce4d7",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:15.655Z"
+    },
+    {
+      "id": "30fb918a-f2a6-4cba-a1f3-2eb7f0e5b066",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:38:17.312Z"
+    },
+    {
+      "id": "98322b31-1a03-43c0-8f41-6b044f48db1a",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:20.853Z"
+    },
+    {
+      "id": "cea34a49-e3e7-43b5-8bbd-00f82fe63694",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:22.356Z"
+    },
+    {
+      "id": "7a185d71-e640-4c0e-9fcb-3e388a1891d7",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:26.157Z"
+    },
+    {
+      "id": "0bc3ee19-e28a-48c6-9fe7-2ef9e8675d35",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:38:27.694Z"
+    },
+    {
+      "id": "c37fecc0-c81e-4ff9-ba54-4276076e7dbe",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T16:38:31.320Z"
+    },
+    {
+      "id": "80d4cb72-1423-4753-9417-d691af9fcffa",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:35.737Z"
+    },
+    {
+      "id": "1b9eb6c9-da52-4dbe-a2c5-9407566a6734",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:39.630Z"
+    },
+    {
+      "id": "66ea13fd-0c4b-4795-b24c-d4b6c60d9778",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:43.703Z"
+    },
+    {
+      "id": "d8b110eb-0d75-47d9-83b9-9c4ab269c5bb",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:38:58.092Z"
+    },
+    {
+      "id": "2a0b3543-6d89-4e71-84c5-e96a6c188a15",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:39:02.460Z"
+    },
+    {
+      "id": "608014d4-62f1-45b1-998e-5d2a3983403b",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:39:06.381Z"
+    },
+    {
+      "id": "ed8c8703-7db2-4248-b099-90c8af597e66",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:39:10.503Z"
+    },
+    {
+      "id": "0d7c4671-348d-4618-bae1-24431109e367",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 43,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:45:35.327Z"
+    },
+    {
+      "id": "31ffb1f7-4037-4f38-8514-fa871dddb075",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:45:52.914Z"
+    },
+    {
+      "id": "6fe7f3e0-0eaf-4913-bf10-4e01ed5ea5e5",
+      "instrument": "VALE3",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:45:54.260Z"
+    },
+    {
+      "id": "4c6d1709-8fed-484e-aac5-35a9f42a1d15",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:45:55.701Z"
+    },
+    {
+      "id": "454645e6-b385-44e2-b01c-22c1aff9a8e6",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:45:57.117Z"
+    },
+    {
+      "id": "1b7d91b8-65a5-422f-88f0-112725156539",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 40,
+      "quantity": 10,
+      "remaining": 10,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:45:58.473Z"
+    },
+    {
+      "id": "05bd2489-ee61-481e-b3fe-4c0c1f553d32",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:02.559Z"
+    },
+    {
+      "id": "0c69371e-d33e-4ada-b788-016975142bd3",
+      "instrument": "PETR4",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:46:04.209Z"
+    },
+    {
+      "id": "9a36ea06-2edb-4895-ae92-55da4227f3cb",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:08.383Z"
+    },
+    {
+      "id": "c3696ab7-6f6d-4e62-98e5-3f22559f99da",
+      "instrument": "VALE3",
+      "side": "SELL",
+      "price": 45,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:10.611Z"
+    },
+    {
+      "id": "c050d855-7ec9-44a8-90cc-5edc210e727c",
+      "instrument": "ITUB4",
+      "side": "BUY",
+      "price": 35,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:15.546Z"
+    },
+    {
+      "id": "53471e30-6a5b-4e83-855c-81af502b7d5f",
+      "instrument": "ITUB4",
+      "side": "SELL",
+      "price": 35,
+      "quantity": 50,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:46:17.533Z"
+    },
+    {
+      "id": "7f54ea28-d76b-4528-8390-2f054b2de5f5",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T16:46:21.412Z"
+    },
+    {
+      "id": "a4a20fc2-08cb-4b2a-b417-a12c4cd06f68",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:26.050Z"
+    },
+    {
+      "id": "135418b7-5681-4b79-843d-654a98fc9c56",
+      "instrument": "BBDC4",
+      "side": "BUY",
+      "price": 0.01,
+      "quantity": 100,
+      "remaining": 100,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:30.458Z"
+    },
+    {
+      "id": "f2787945-8d75-47a4-919a-117cbf20ef0a",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:35.617Z"
+    },
+    {
+      "id": "4881528b-6b33-40a3-a2ac-6c6081187aa2",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:39.889Z"
+    },
+    {
+      "id": "9a171972-b821-4e32-8ce1-c55f392b3f20",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:44.173Z"
+    },
+    {
+      "id": "79bda57d-a270-4571-b908-68ec8d8ac548",
+      "instrument": "TAEE11",
+      "side": "BUY",
+      "price": 32,
+      "quantity": 300,
+      "remaining": 300,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T16:46:48.518Z"
+    },
+    {
+      "id": "ba72fdaf-00f2-43c5-82e6-779e921b9781",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 49,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T16:53:36.030Z"
+    },
+    {
+      "id": "e41d8a5d-4aec-4e3c-9a87-2bbfdfdf181a",
+      "instrument": "TAEE11",
+      "side": "SELL",
+      "price": 43,
+      "quantity": 30,
+      "remaining": 30,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T16:53:48.620Z"
     }
   ],
   "history": [
@@ -1666,6 +3656,946 @@
       "remaining": 210,
       "price": 44,
       "timestamp": "2026-04-05T02:57:38.573Z"
+    },
+    {
+      "id": "0d6544af-28d9-47ec-ac76-28d861733fc2",
+      "orderId": "07b0ec69-75f9-4281-aabd-f7820e10786f",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 50,
+      "timestamp": "2026-04-05T04:15:25.030Z"
+    },
+    {
+      "id": "de3437bc-8cca-472a-b2a1-c74457508b83",
+      "orderId": "c3cc54e1-286c-451e-ab28-aa8fc5f2f722",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 150,
+      "price": 84,
+      "timestamp": "2026-04-05T04:15:25.030Z"
+    },
+    {
+      "id": "bef96770-b484-4767-b740-6293247ad51b",
+      "orderId": "e8fc3fa2-3a3c-45c0-b701-c470f54bc4b0",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 50,
+      "timestamp": "2026-04-05T04:15:38.950Z"
+    },
+    {
+      "id": "65922dc0-bae6-465e-9880-94cb7ea3242c",
+      "orderId": "c3cc54e1-286c-451e-ab28-aa8fc5f2f722",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 100,
+      "price": 84,
+      "timestamp": "2026-04-05T04:15:38.951Z"
+    },
+    {
+      "id": "00279782-09a4-428a-9c20-bd8b8f4ab11c",
+      "orderId": "08f25b68-951d-4f31-9066-efcc09512568",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:16:06.069Z"
+    },
+    {
+      "id": "a2aaf8a1-dfb8-474e-8829-35f590d679d1",
+      "orderId": "7273da5e-5683-463c-b9e7-94faec9d9401",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 330,
+      "price": 20,
+      "timestamp": "2026-04-05T04:16:06.069Z"
+    },
+    {
+      "id": "79322cd8-4913-41ae-b7ad-5cfd4a308572",
+      "orderId": "fd19a533-3b7e-4476-8bc8-fadda6b0736e",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:16:13.416Z"
+    },
+    {
+      "id": "35be6234-267b-44d3-ab6b-c91f0f238bd1",
+      "orderId": "0f06087b-a87c-4d55-97a3-4f7fb7148585",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 100,
+      "remaining": 100,
+      "price": 48.15,
+      "timestamp": "2026-04-05T04:16:13.416Z"
+    },
+    {
+      "id": "bda53c11-3a15-46a6-8511-342b50b59592",
+      "orderId": "f927f9ba-3010-4247-873a-338c85bec51c",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:16:18.996Z"
+    },
+    {
+      "id": "bacdce9d-c880-46b0-9c6e-2868614f9796",
+      "orderId": "0f06087b-a87c-4d55-97a3-4f7fb7148585",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 48.15,
+      "timestamp": "2026-04-05T04:16:18.997Z"
+    },
+    {
+      "id": "e5916156-3875-4b5f-b690-6c7a7981c221",
+      "orderId": "3958410e-801c-4255-8be4-e8dbd796280d",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:16:24.717Z"
+    },
+    {
+      "id": "b13e4b5a-b9be-429e-8fef-79f0190a66e1",
+      "orderId": "c3cc54e1-286c-451e-ab28-aa8fc5f2f722",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 84,
+      "timestamp": "2026-04-05T04:16:24.717Z"
+    },
+    {
+      "id": "309fcf35-cf57-4b73-9b89-f43ccb626cd5",
+      "orderId": "37516f2e-1a86-4396-a602-2390d3a19cc2",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:16:40.459Z"
+    },
+    {
+      "id": "c1b4402f-6ada-46e2-a42e-6df2c37776e5",
+      "orderId": "302f771d-3ced-481c-b8b6-48fa5f1181b3",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 100,
+      "remaining": 140,
+      "price": 83.5,
+      "timestamp": "2026-04-05T04:16:40.459Z"
+    },
+    {
+      "id": "f65be0d0-3bba-4b58-a1d5-9cbcc073002d",
+      "orderId": "0357282e-c578-4d5c-a48b-9448d8469798",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:16:56.024Z"
+    },
+    {
+      "id": "5cc60e4f-34b4-4bef-bae7-fc2a5f87aa5c",
+      "orderId": "b0597e7a-c703-480e-b191-6b7b05bf4079",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 150,
+      "price": 43.09,
+      "timestamp": "2026-04-05T04:16:56.024Z"
+    },
+    {
+      "id": "d45cbff7-40b7-4e71-bb9e-a3e7d02ef119",
+      "orderId": "4824b40d-61e9-440a-937e-aa6e2c65aef2",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:17:01.856Z"
+    },
+    {
+      "id": "e25beaa8-1261-4c4b-9fad-97685f783e72",
+      "orderId": "b0597e7a-c703-480e-b191-6b7b05bf4079",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 100,
+      "price": 43.09,
+      "timestamp": "2026-04-05T04:17:01.857Z"
+    },
+    {
+      "id": "1051d536-9115-4955-a4eb-881e2df9b4a3",
+      "orderId": "8366ecdf-9d44-474f-95a2-7b6520cbe702",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 25,
+      "timestamp": "2026-04-05T04:17:05.974Z"
+    },
+    {
+      "id": "7e1f74c0-b390-466c-b5a4-bb53f81ed8c5",
+      "orderId": "7273da5e-5683-463c-b9e7-94faec9d9401",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 100,
+      "remaining": 230,
+      "price": 20,
+      "timestamp": "2026-04-05T04:17:05.974Z"
+    },
+    {
+      "id": "1d86bbcf-240d-491b-9b30-995074183d61",
+      "orderId": "d39fe2a5-880c-4bf5-9056-e72ef0414e13",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 25,
+      "timestamp": "2026-04-05T04:17:19.990Z"
+    },
+    {
+      "id": "3f1cb8ec-d5b8-4503-a4a6-d72c2899c910",
+      "orderId": "7273da5e-5683-463c-b9e7-94faec9d9401",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 100,
+      "remaining": 130,
+      "price": 20,
+      "timestamp": "2026-04-05T04:17:19.990Z"
+    },
+    {
+      "id": "5b640b1d-9ac9-4a0a-9737-6a10bc754c7e",
+      "orderId": "9e8dd7c3-1c0a-4f33-8b43-103fd1414748",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 50,
+      "timestamp": "2026-04-05T04:29:56.447Z"
+    },
+    {
+      "id": "512f0d34-d7a7-4f54-89cb-5b68dfab9245",
+      "orderId": "302f771d-3ced-481c-b8b6-48fa5f1181b3",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 90,
+      "price": 83.5,
+      "timestamp": "2026-04-05T04:29:56.448Z"
+    },
+    {
+      "id": "e8644213-121c-45e4-966e-98baee249a23",
+      "orderId": "7a400251-fb4f-460c-a646-ff959ca51f64",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 50,
+      "timestamp": "2026-04-05T04:30:12.409Z"
+    },
+    {
+      "id": "ae398715-994b-47c9-ad49-80f674c7b7ec",
+      "orderId": "302f771d-3ced-481c-b8b6-48fa5f1181b3",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 40,
+      "price": 83.5,
+      "timestamp": "2026-04-05T04:30:12.409Z"
+    },
+    {
+      "id": "dbda76fa-2102-44de-94cd-dafa35496bff",
+      "orderId": "8e182ff3-a876-432c-b865-d20a4a137477",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:30:41.126Z"
+    },
+    {
+      "id": "e69667dc-5b17-4807-b8af-7ad98229311c",
+      "orderId": "7273da5e-5683-463c-b9e7-94faec9d9401",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 120,
+      "price": 20,
+      "timestamp": "2026-04-05T04:30:41.127Z"
+    },
+    {
+      "id": "93cfcc0e-587a-4faf-9177-9cd0066284fd",
+      "orderId": "aa3294fd-31ac-4006-b268-cf62eddd4a7b",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:30:48.915Z"
+    },
+    {
+      "id": "97997e19-5be9-416f-bb38-ff58989e7cc6",
+      "orderId": "009554e4-b83e-4c1e-9000-2327a358edf3",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:30:48.916Z"
+    },
+    {
+      "id": "0cf251bc-6374-4050-8d1c-a07ca7cc5af3",
+      "orderId": "ad19e9b1-ce5c-4c0e-8587-d36f985ad0ba",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 40,
+      "remaining": 60,
+      "price": 45,
+      "timestamp": "2026-04-05T04:30:54.461Z"
+    },
+    {
+      "id": "bc7444fa-7ea3-4955-b99c-c3a23850d8fd",
+      "orderId": "302f771d-3ced-481c-b8b6-48fa5f1181b3",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 40,
+      "remaining": 0,
+      "price": 83.5,
+      "timestamp": "2026-04-05T04:30:54.461Z"
+    },
+    {
+      "id": "2f62e4cb-38b5-456d-9ed5-bb1c377cf241",
+      "orderId": "e47c8bde-c9fa-4aaf-8b6c-2696aae77eec",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:31:00.453Z"
+    },
+    {
+      "id": "37f5eba7-6f6d-4342-82b4-90385c2253a9",
+      "orderId": "b0597e7a-c703-480e-b191-6b7b05bf4079",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 50,
+      "price": 43.09,
+      "timestamp": "2026-04-05T04:31:00.454Z"
+    },
+    {
+      "id": "e0c9fe6b-8201-4a4d-a0d4-0cd4080859e1",
+      "orderId": "e22cd89c-836d-4d9f-8c26-ec3641886b8f",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 25,
+      "timestamp": "2026-04-05T04:31:04.076Z"
+    },
+    {
+      "id": "be6b21b3-34e5-47ca-9b33-c4d52af90406",
+      "orderId": "7273da5e-5683-463c-b9e7-94faec9d9401",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 100,
+      "remaining": 20,
+      "price": 20,
+      "timestamp": "2026-04-05T04:31:04.076Z"
+    },
+    {
+      "id": "24181de7-3e8e-4a4f-a122-fc7d2283829a",
+      "orderId": "f0d2bda1-ac0a-4c2c-81ae-21f736508db4",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 20,
+      "remaining": 80,
+      "price": 25,
+      "timestamp": "2026-04-05T04:31:17.973Z"
+    },
+    {
+      "id": "dab8fb68-025b-43bd-926f-188b89348ef9",
+      "orderId": "7273da5e-5683-463c-b9e7-94faec9d9401",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 20,
+      "remaining": 0,
+      "price": 20,
+      "timestamp": "2026-04-05T04:31:17.973Z"
+    },
+    {
+      "id": "7547806c-5c36-47fe-a677-b7ced6e21f04",
+      "orderId": "f0d2bda1-ac0a-4c2c-81ae-21f736508db4",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 80,
+      "remaining": 0,
+      "price": 25,
+      "timestamp": "2026-04-05T04:31:17.974Z"
+    },
+    {
+      "id": "8ffca9b9-a197-4e32-8b57-a587e63d2f13",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 80,
+      "remaining": 220,
+      "price": 21,
+      "timestamp": "2026-04-05T04:31:17.974Z"
+    },
+    {
+      "id": "dce4ea26-7b83-4e83-b2b2-14dafeac8131",
+      "orderId": "110c05b1-d861-4eca-b35e-fa018a58d642",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:35:58.954Z"
+    },
+    {
+      "id": "33f1aea7-b696-434c-af62-3ed42a5bea37",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 210,
+      "price": 21,
+      "timestamp": "2026-04-05T04:35:58.954Z"
+    },
+    {
+      "id": "1664eefb-6b9d-49c4-a515-4cbf60f08b4d",
+      "orderId": "3c1140db-cc75-4419-98ee-0f77139878de",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:36:06.022Z"
+    },
+    {
+      "id": "43902bdb-09bf-4c77-a14f-d7e2c105812d",
+      "orderId": "736f4506-85c0-4779-af25-29c4b7ffaa73",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:36:06.022Z"
+    },
+    {
+      "id": "a226297c-5b49-4412-8eeb-740f4ceeaa02",
+      "orderId": "40ddce53-f020-418b-874a-084cd2c79bf9",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:36:20.052Z"
+    },
+    {
+      "id": "0ce1ba2e-cb38-4055-ba5e-a1e93b78aa8a",
+      "orderId": "b0597e7a-c703-480e-b191-6b7b05bf4079",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 43.09,
+      "timestamp": "2026-04-05T04:36:20.052Z"
+    },
+    {
+      "id": "b3ab34e9-195e-41a7-9c4c-8b65d9a3945c",
+      "orderId": "d2682087-21dc-4e0c-84da-97da1c270144",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:40:24.092Z"
+    },
+    {
+      "id": "fb03e234-3744-415a-a654-e1597de3568c",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 200,
+      "price": 21,
+      "timestamp": "2026-04-05T04:40:24.093Z"
+    },
+    {
+      "id": "9997a833-a749-4b3e-9ccf-0f3f1860b6d5",
+      "orderId": "ebcdc5ff-978f-4f2b-af0f-1358314f915b",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:40:31.885Z"
+    },
+    {
+      "id": "5db0f085-fc66-463d-be9a-74cb083a7fc9",
+      "orderId": "52c7eb16-1b1c-44a6-91eb-ea8bb014fb9c",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:40:31.888Z"
+    },
+    {
+      "id": "1d06e874-49ba-4fcf-8ea7-30860480e661",
+      "orderId": "550fe379-b512-4026-bcd4-b8002033d6ac",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 40,
+      "price": 35,
+      "timestamp": "2026-04-05T04:40:44.357Z"
+    },
+    {
+      "id": "72a5e070-79b2-447c-97cb-51827641e805",
+      "orderId": "4af778d1-f8c6-46d6-8ae0-d5003bc42916",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:40:44.359Z"
+    },
+    {
+      "id": "8886d6f9-2234-43bd-b949-15e91d82bdc1",
+      "orderId": "550fe379-b512-4026-bcd4-b8002033d6ac",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 40,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:40:44.365Z"
+    },
+    {
+      "id": "ba91d967-85f5-425a-a48b-460b617fc937",
+      "orderId": "0a29ce0b-9769-4c60-81f6-2d86eb33462d",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 40,
+      "remaining": 160,
+      "price": 35,
+      "timestamp": "2026-04-05T04:40:44.365Z"
+    },
+    {
+      "id": "8c6fee94-1a0d-48a3-afd0-5382a19d3841",
+      "orderId": "bd8a0d59-ffdf-4aa0-a070-96a93554a60c",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:45:18.310Z"
+    },
+    {
+      "id": "8d5ab8e8-586f-4e43-aa8c-855c9c327f7b",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 190,
+      "price": 21,
+      "timestamp": "2026-04-05T04:45:18.311Z"
+    },
+    {
+      "id": "83c24758-60da-492b-8209-4064336d6142",
+      "orderId": "a476c6f3-de87-41ea-b069-1ce61fa30415",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:45:25.258Z"
+    },
+    {
+      "id": "64d17914-1ca2-43b2-9530-704d4ec89204",
+      "orderId": "3fd3982d-fd3c-4cd2-8ed2-ea88589960e3",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:45:25.258Z"
+    },
+    {
+      "id": "5b8bd050-84db-444d-a505-d4420a3d7a54",
+      "orderId": "c0bb13bf-3b03-43df-9839-8f9877801be3",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:45:36.481Z"
+    },
+    {
+      "id": "6ebcb892-f246-4241-ab27-55cb4ab54972",
+      "orderId": "0a29ce0b-9769-4c60-81f6-2d86eb33462d",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 110,
+      "price": 35,
+      "timestamp": "2026-04-05T04:45:36.481Z"
+    },
+    {
+      "id": "2d9978c6-40e7-4f07-a2f5-ff04f76d30c6",
+      "orderId": "793ec630-3728-4d61-8c75-3e789bb9ff10",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 100,
+      "price": 0.01,
+      "timestamp": "2026-04-05T04:45:41.167Z"
+    },
+    {
+      "id": "a1573628-6a76-4d0c-aef9-9d181753ea8a",
+      "orderId": "d56adbea-2fef-463d-a35d-8435006db69d",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T04:47:34.238Z"
+    },
+    {
+      "id": "a30ffa4b-7d6d-4424-a339-33ef03592912",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 180,
+      "price": 21,
+      "timestamp": "2026-04-05T04:47:34.239Z"
+    },
+    {
+      "id": "dc33bd76-485e-4d36-9e53-a63318b300a4",
+      "orderId": "59589ac1-78f2-4b2c-8681-02f01ee9fe9a",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:47:42.138Z"
+    },
+    {
+      "id": "acb6b6e8-cc55-450d-8d85-3e79bdab9c5b",
+      "orderId": "5ebc45c0-a290-4e9b-8a83-2a378dfba904",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T04:47:42.139Z"
+    },
+    {
+      "id": "3eec645b-2b6d-441c-9600-891a80f5e3ef",
+      "orderId": "da131b36-6497-4b23-8c89-9b7ab2510afd",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T04:47:53.460Z"
+    },
+    {
+      "id": "e15cd1d0-8b4a-49cd-8b8e-0b490766e713",
+      "orderId": "0a29ce0b-9769-4c60-81f6-2d86eb33462d",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 60,
+      "price": 35,
+      "timestamp": "2026-04-05T04:47:53.460Z"
+    },
+    {
+      "id": "e41dc89e-2cdf-4430-aaed-7cb8fe3157f9",
+      "orderId": "f0c7e06e-acf7-4767-be45-8bcacbc59542",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 100,
+      "price": 0.01,
+      "timestamp": "2026-04-05T04:47:58.141Z"
+    },
+    {
+      "id": "3885a550-8d56-4b49-9221-a0288d2a8f0d",
+      "orderId": "bf6e5b9e-108b-4b36-9f7b-b37838ada860",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T16:28:03.614Z"
+    },
+    {
+      "id": "91ecdba5-ceb5-4800-91d3-f998c7d4f6af",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 170,
+      "price": 21,
+      "timestamp": "2026-04-05T16:28:03.614Z"
+    },
+    {
+      "id": "b3b0b8b7-a702-4a9d-afc7-775a2fab40b5",
+      "orderId": "620aff8e-040d-4462-9da4-9086fcd3d30b",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T16:28:11.468Z"
+    },
+    {
+      "id": "0d5d03a6-a387-41b0-9714-9e81dc5aa3c2",
+      "orderId": "75102cc1-c68f-4b5a-97df-68d378a3a164",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T16:28:11.468Z"
+    },
+    {
+      "id": "06091c1b-d7e6-4236-bd86-2d61ac141d5e",
+      "orderId": "638c3919-1f29-4066-ae60-bb9e8f848d53",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T16:28:22.754Z"
+    },
+    {
+      "id": "be5e6558-44d9-45c6-b7e2-dffbba1f82b3",
+      "orderId": "0a29ce0b-9769-4c60-81f6-2d86eb33462d",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 10,
+      "price": 35,
+      "timestamp": "2026-04-05T16:28:22.754Z"
+    },
+    {
+      "id": "c961099d-1db2-4c8a-a4c4-e253a143dda9",
+      "orderId": "6b9cafa2-b1f4-4cdd-8274-18867125b698",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 100,
+      "price": 0.01,
+      "timestamp": "2026-04-05T16:28:27.483Z"
+    },
+    {
+      "id": "cccdb97e-7cdb-45fe-8443-e6d21dbaf2a2",
+      "orderId": "28ced6c6-5a69-41fe-8be2-728bd90ff6cc",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T16:38:10.291Z"
+    },
+    {
+      "id": "eed0064e-ef19-4bec-9962-426ec0a92af9",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 160,
+      "price": 21,
+      "timestamp": "2026-04-05T16:38:10.292Z"
+    },
+    {
+      "id": "67e868a7-8a2d-4295-889a-781bef0ce0cb",
+      "orderId": "30fb918a-f2a6-4cba-a1f3-2eb7f0e5b066",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T16:38:17.314Z"
+    },
+    {
+      "id": "776cbf52-0ec6-47c2-9a67-dfd4b4b5e649",
+      "orderId": "bd50cecc-f9f5-4feb-a66a-c6571a7b699b",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T16:38:17.314Z"
+    },
+    {
+      "id": "76b98a11-9673-46bd-b016-11c5a3809c74",
+      "orderId": "0bc3ee19-e28a-48c6-9fe7-2ef9e8675d35",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 40,
+      "price": 35,
+      "timestamp": "2026-04-05T16:38:27.695Z"
+    },
+    {
+      "id": "741dd075-4ee5-479e-8c65-c2afb59aae5f",
+      "orderId": "0a29ce0b-9769-4c60-81f6-2d86eb33462d",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T16:38:27.696Z"
+    },
+    {
+      "id": "18d1fd57-7b3a-4eb3-969c-c878985f5389",
+      "orderId": "0bc3ee19-e28a-48c6-9fe7-2ef9e8675d35",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 40,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T16:38:27.696Z"
+    },
+    {
+      "id": "ec76dca0-b413-461c-bbf1-d5c2c1c307bb",
+      "orderId": "bc191c2c-9a4e-4c5f-af8e-51298398c5e5",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 40,
+      "remaining": 160,
+      "price": 35,
+      "timestamp": "2026-04-05T16:38:27.696Z"
+    },
+    {
+      "id": "25bea311-aaca-4763-a2a1-14e046d8ed9f",
+      "orderId": "c37fecc0-c81e-4ff9-ba54-4276076e7dbe",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 100,
+      "price": 0.01,
+      "timestamp": "2026-04-05T16:38:32.174Z"
+    },
+    {
+      "id": "55693f31-d0e4-4603-9274-51bfcd1ce854",
+      "orderId": "454645e6-b385-44e2-b01c-22c1aff9a8e6",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 40,
+      "timestamp": "2026-04-05T16:45:57.120Z"
+    },
+    {
+      "id": "7a146f88-8844-4f41-a494-c94fe3e76432",
+      "orderId": "327e81a1-f42f-4276-9c38-0f794482871b",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 150,
+      "price": 21,
+      "timestamp": "2026-04-05T16:45:57.121Z"
+    },
+    {
+      "id": "6a4adaad-13a8-4226-9df9-6f52a53b8460",
+      "orderId": "0c69371e-d33e-4ada-b788-016975142bd3",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T16:46:04.212Z"
+    },
+    {
+      "id": "c8824b18-7f9f-48a2-be3f-ce3de04e6020",
+      "orderId": "e95d790c-6c0a-4ccc-83db-6dca19908f2a",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 45,
+      "timestamp": "2026-04-05T16:46:04.213Z"
+    },
+    {
+      "id": "c2e6bf7c-f2a8-4a13-8718-e32e341ec07a",
+      "orderId": "53471e30-6a5b-4e83-855c-81af502b7d5f",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 50,
+      "remaining": 0,
+      "price": 35,
+      "timestamp": "2026-04-05T16:46:17.534Z"
+    },
+    {
+      "id": "2a9161a2-ad00-4158-96a5-489e06179289",
+      "orderId": "bc191c2c-9a4e-4c5f-af8e-51298398c5e5",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 50,
+      "remaining": 110,
+      "price": 35,
+      "timestamp": "2026-04-05T16:46:17.534Z"
+    },
+    {
+      "id": "cd5181a7-a146-42f8-b050-672ca50d16ec",
+      "orderId": "7f54ea28-d76b-4528-8390-2f054b2de5f5",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 100,
+      "price": 0.01,
+      "timestamp": "2026-04-05T16:46:22.420Z"
+    },
+    {
+      "id": "00d9b8fc-c552-414f-9558-9ca17e97efa6",
+      "orderId": "ba72fdaf-00f2-43c5-82e6-779e921b9781",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 49,
+      "timestamp": "2026-04-05T16:53:36.032Z"
+    },
+    {
+      "id": "20cbc1a0-07d1-41a0-96aa-46baec624601",
+      "orderId": "a7e53510-3a35-4ba9-bd07-3bc1f1665347",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 148,
+      "price": 48.9,
+      "timestamp": "2026-04-05T16:53:36.032Z"
+    },
+    {
+      "id": "d18573ca-e1d5-4b78-8c4b-55b7dd608f2f",
+      "orderId": "e41d8a5d-4aec-4e3c-9a87-2bbfdfdf181a",
+      "side": "SELL",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 30,
+      "price": 43,
+      "timestamp": "2026-04-05T16:55:11.510Z"
     }
   ]
 }
