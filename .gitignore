@@ -16,6 +16,7 @@
 cypress/videos
 cypress/downloads
 cypress/screenshots
+.tmp-*
 
 # next.js
 /.next/

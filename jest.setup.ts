@@ -1,6 +1,29 @@
 import React from "react";
 import "@testing-library/jest-dom";
 
+type ChakraToastMockData = {
+  type?: string;
+  title?: string;
+  description?: string;
+  action?: { label: string };
+  closable?: boolean;
+};
+
+declare global {
+  var __chakraCreateToasterMock: jest.Mock;
+  var __chakraToastMockData: ChakraToastMockData;
+}
+
+const mockCreateToaster = jest.fn(() => ({ create: jest.fn() }));
+globalThis.__chakraCreateToasterMock = mockCreateToaster;
+globalThis.__chakraToastMockData = {
+  type: "success",
+  title: "Default title",
+  description: "Default description",
+  action: undefined,
+  closable: false,
+};
+
 Object.defineProperty(window, "matchMedia", {
   writable: true,
   value: (query: string) => ({
@@ -58,6 +81,13 @@ beforeEach(() => {
   backMock.mockReset();
   forwardMock.mockReset();
   refreshMock.mockReset();
+  globalThis.__chakraToastMockData = {
+    type: "success",
+    title: "Default title",
+    description: "Default description",
+    action: undefined,
+    closable: false,
+  };
 });
 
 jest.mock("@chakra-ui/react", () => {
@@ -126,10 +156,62 @@ jest.mock("@chakra-ui/react", () => {
       children,
     );
 
+  const ChakraToaster = ({
+    toaster,
+    insetInline,
+    children,
+  }: {
+    toaster?: unknown;
+    insetInline?: unknown;
+    children?:
+      | ((toast: ChakraToastMockData) => React.ReactNode)
+      | React.ReactNode;
+  }) =>
+    React.createElement(
+      "div",
+      {
+        "data-testid": "chakra-toaster",
+        "data-has-toaster": String(Boolean(toaster)),
+        "data-inset-inline": JSON.stringify(insetInline),
+      },
+      typeof children === "function"
+        ? children(globalThis.__chakraToastMockData)
+        : null,
+    );
+
+  const Spinner = () =>
+    React.createElement("span", { "data-testid": "spinner" });
+  const Stack = ({ children }: { children?: React.ReactNode }) =>
+    React.createElement("div", { "data-testid": "stack" }, children);
+
+  const Toast = {
+    Root: ({ children }: { children?: React.ReactNode }) =>
+      React.createElement("div", { "data-testid": "toast-root" }, children),
+    Indicator: () =>
+      React.createElement("span", { "data-testid": "toast-indicator" }),
+    Title: ({ children }: { children?: React.ReactNode }) =>
+      React.createElement("span", null, children),
+    Description: ({ children }: { children?: React.ReactNode }) =>
+      React.createElement("span", null, children),
+    ActionTrigger: ({ children }: { children?: React.ReactNode }) =>
+      React.createElement(
+        "button",
+        { "data-testid": "toast-action" },
+        children,
+      ),
+    CloseTrigger: () =>
+      React.createElement("button", { "data-testid": "toast-close" }, "x"),
+  };
+
   return {
     ...actual,
     Box,
     Button,
+    Toaster: ChakraToaster,
+    Spinner,
+    Stack,
+    Toast,
+    createToaster: mockCreateToaster,
     CloseButton: ({ onClick }: { onClick?: () => void }) =>
       React.createElement("button", { onClick, type: "button" }, "fechar"),
     IconButton: ({
@@ -157,7 +239,7 @@ jest.mock("@chakra-ui/react", () => {
         children,
       ),
     Portal: ({ children }: { children?: React.ReactNode }) =>
-      React.createElement(React.Fragment, null, children),
+      React.createElement("div", { "data-testid": "portal" }, children),
     Drawer: {
       Root: Div,
       Trigger: Div,
@@ -172,3 +254,10 @@ jest.mock("@chakra-ui/react", () => {
     },
   };
 });
+
+jest.mock("./app/components/ui/toaster", () => ({
+  toaster: {
+    create: jest.fn(),
+  },
+  Toaster: () => null,
+}));
