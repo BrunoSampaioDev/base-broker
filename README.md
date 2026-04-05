@@ -3,11 +3,13 @@
 ## Índice
 
 - [Stack técnica](#stack-técnica)
-- [Como executar](#como-executar)
+- [Como rodar o projeto](#como-rodar-o-projeto)
 - [Executando testes unitários e de integração](#executando-testes-unitários-e-de-integração)
   - [Com coverage](#com-coverage)
   - [Sem coverage](#sem-coverage)
   - [Cobertura de testes atual](#cobertura-de-testes-atual)
+- [Executando testes e2e](#executando-testes-e2e)
+- [Sobre os testes](#sobre-os-testes)
 - [Estrutura funcional](#estrutura-funcional)
 - [Fluxo de dados](#fluxo-de-dados)
 - [Componentes](#componentes)
@@ -38,8 +40,7 @@
 - [Helpers relevantes](#helpers-relevantes)
   - [Formatters](#formatters)
   - [Masks](#masks)
-- [Sobre testes](#sobre-testes)
-- [Sobre testes](#sobre-testes)
+- [Resumo final](#resumo-final)
 
 ## Stack técnica
 
@@ -74,13 +75,19 @@ Em outro terminal, suba o frontend:
 npm run dev
 ```
 
+Rodando o JSON server + o Next.js ( roda um script .sh que vai subir os 2 serviços ).
+
+```bash
+npm run dev:all 
+```
+
 Aplicação web:
 
-- http://localhost:3000
+- <http://localhost:3000>
 
-API server JSON:
+API JSON server:
 
-- http://localhost:3001
+- <http://localhost:3001>
 
 ## Executando testes unitários e de integração
 
@@ -129,11 +136,30 @@ npm run e2e:open
 
 ![Cobertura de testes](.github/images/e2e-coverage.png)
 
+
+
+## Sobre os testes
+
+O projeto possui uma cobertura relevante.
+
+Diretriz usada na suíte:
+
+- testes de unidade
+- testes de integração do componente com seus contratos e dependências
+- centralização de mocks globais em [jest.setup.ts](jest.setup.ts)
+- utilizar o pattern test da builder para mocks
+
+Exemplos de mocks globais já existentes:
+
+- `fetch`
+- componentes Chakra UI necessários para os testes
+- `next/navigation`
+
 ## Estrutura funcional
 
 O dashboard principal está em [app/page.tsx](app/page.tsx) e compõe quatro áreas principais:
 
-1. Livro de ordens: [app/components/order-book/index.tsx](app/components/order-book/index.tsx)
+1. Livro de ofertas: [app/components/order-book/index.tsx](app/components/order-book/index.tsx)
 2. Gráfico do ativo: [app/components/charts/stock.tsx](app/components/charts/stock.tsx)
 3. Formulário de ordens: [app/components/order-forms/form-order.tsx](app/components/order-forms/form-order.tsx)
 4. Tabela de ordens: [app/components/order-table/index.tsx](app/components/order-table/index.tsx)
@@ -144,7 +170,7 @@ O padrão predominante do projeto é:
 
 1. componente consome um hook
 2. hook consome um serviço
-3. serviço chama a API do server JSON em http://localhost:3001
+3. serviço chama a API do JSON server em <http://localhost:3001>
 4. resposta é normalizada e exibida pelo componente
 
 Exemplos:
@@ -183,7 +209,7 @@ Regras de negócio:
 - quantidade deve ser maior ou igual a `1`
 - após sucesso:
   - refetch de `orders` para atualizar os dados da tabela de ordens
-  - refetch de `orderBook` para atualizar os dados do livro de ordens
+  - refetch de `orderBook` para atualizar os dados do livro de ofertas
   - reset do formulário
   - exibe um toast com a informação de sucesso ou erro na execução do cancelamento da ordem
 
@@ -211,8 +237,7 @@ Atualização da URL:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/order-form.png)
-
+![OrderForm](.github/images/order-form.png)
 
 ### OrdersTable
 
@@ -237,7 +262,7 @@ Fonte de dados:
 
 #### visão do componente
 
-![Cobertura de testes](.github/images/order-table.png)
+![OrderTable](.github/images/order-table.png)
 
 ### OrderFilters
 
@@ -293,7 +318,7 @@ Exemplo real de query montada:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/order-filters.png)
+![OrderFilters](.github/images/order-filters.png)
 
 ### OrdersTableContent
 
@@ -329,7 +354,7 @@ Dependência de ação: (abre o drawer com detalhes da ordem):
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/order-table-content.png)
+![OrderTableContent](.github/images/order-table-content.png)
 
 ### OrderDrawer
 
@@ -346,6 +371,7 @@ Regras de negócio:
   - `EXECUTED`
   - `CANCELLED`
 - ao clicar no botão, abre a modal [CancelOrderConfirmation](#cancelorderconfirmation) para confirmação
+- refetch de `orders` para atualizar dados da tabela
 
 Dependências:
 
@@ -354,7 +380,7 @@ Dependências:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/order-drwer.png)
+![OrderDrawer](.github/images/order-drwer.png)
 
 ### CancelOrderConfirmation
 
@@ -376,10 +402,9 @@ Props:
 Regras de negócio:
 
 - cancelamento só pode ser executado com campo de assinatura eletrônica preenchido
-- ao confirmação, executa a mutação de cancelamento da ordem
+- ao confirmar, executa a mutação de cancelamento da ordem
 - após sucesso:
-  - refetch de `orders` para atualizar dados da tabela
-  - refetch de `history` para atualizar histórico da ordem
+  - refetch de `history` para atualizar a visualização do histórico da ordem em tempo real
   - fecha a modal
   - exibe um toast com a informação de sucesso ou erro na execução da ordem
 - modal fecha ao clicar em "Fechar", botão X ou pressionar Esc
@@ -391,8 +416,7 @@ Integração com API:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/order-cancel-modal.png)
-
+![CancelOrderConfirmation](.github/images/order-cancel-modal.png)
 
 ### OrderTimeLine
 
@@ -412,12 +436,11 @@ Fonte de dados:
 Regras:
 
 - sempre renderiza primeiro o bloco de criação da ordem
-- eventos seguintes vêm da coleção `history`
+- os eventos seguintes vêm da coleção `history`
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/order-timeline.png)
-
+![OrderTimeline](.github/images/order-timeline.png)
 
 ### OrderBook
 
@@ -470,7 +493,7 @@ Resposta:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/orders-book.png)
+![OrderBook](.github/images/orders-book.png)
 
 ### StockChart
 
@@ -503,7 +526,7 @@ Observação:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/chart.png)
+![StockChart](.github/images/chart.png)
 
 ### Dashboard
 
@@ -528,7 +551,7 @@ Dependências diretas:
 
 #### Visão do Componente
 
-![Cobertura de testes](.github/images/dash-app.png)
+![Dashboard](.github/images/dash-app.png)
 
 ## Hooks
 
@@ -551,7 +574,7 @@ Arquivo: [app/hooks/use-get-order-book.tsx](app/hooks/use-get-order-book.tsx)
 
 Responsabilidade:
 
-- encapsular a consulta do livro de ordens
+- encapsular a consulta do livro de ofertas
 
 Observações:
 
@@ -649,7 +672,7 @@ Implementação cliente:
 
 - [app/services/cancel-order.ts](app/services/cancel-order.ts)
 
-Response: 
+Response:
 
 ```JSON
 {
@@ -802,23 +825,6 @@ Arquivo: [app/helpers/masks.ts](app/helpers/masks.ts)
 Responsabilidade:
 
 - mascara para inpouts que recebem valores monetários
-
-## Sobre testes
-
-O projeto possui uma cobertura relevante.
-
-Diretriz usada na suíte:
-
-- teste de unidade
-- teste de integração do componente com seus contratos
-- centralizar mocks globais em [jest.setup.ts](jest.setup.ts)
-- utilizar o pattern test da builder para mocks
-
-Exemplos de mocks globais já existentes:
-
-- `fetch`
-- componentes Chakra UI necessários para os testes
-- `next/navigation`
 
 ## Resumo final
 
