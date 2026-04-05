@@ -60,7 +60,8 @@ export function OrderBook() {
   return (
     <Box
       width="350px"
-      minHeight="100vh"
+      height="100vh"
+      flexShrink={0}
       bg="#171717"
       borderRight="1px solid #2E2E3E"
       p="2"
