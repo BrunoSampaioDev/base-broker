@@ -661,7 +661,7 @@
       "side": "SELL",
       "price": 48.9,
       "quantity": 210,
-      "remaining": 168,
+      "remaining": 158,
       "status": "PARTIAL",
       "createdAt": "2026-04-04T17:29:24.444Z"
     },
@@ -772,7 +772,7 @@
       "price": 50,
       "quantity": 760,
       "remaining": 760,
-      "status": "OPEN",
+      "status": "CANCELLED",
       "createdAt": "2026-04-04T17:32:55.078Z"
     },
     {
@@ -804,6 +804,36 @@
       "remaining": 600,
       "status": "CANCELLED",
       "createdAt": "2026-04-04T17:33:38.200Z"
+    },
+    {
+      "id": "7ed26874-ec2b-4351-8059-a3e25917215a",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 44,
+      "quantity": 210,
+      "remaining": 210,
+      "status": "CANCELLED",
+      "createdAt": "2026-04-05T02:14:31.440Z"
+    },
+    {
+      "id": "aa7fc69e-ce98-4117-a392-a7704fccc7ce",
+      "instrument": "BBDC4",
+      "side": "SELL",
+      "price": 23,
+      "quantity": 200,
+      "remaining": 200,
+      "status": "OPEN",
+      "createdAt": "2026-04-05T02:14:43.066Z"
+    },
+    {
+      "id": "90ab37c2-31f5-4d01-a5c4-7631add6362d",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 50,
+      "quantity": 10,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-04-05T02:54:48.485Z"
     }
   ],
   "history": [
@@ -1596,6 +1626,46 @@
       "remaining": 120,
       "price": 43,
       "timestamp": "2026-04-05T00:48:20.639Z"
+    },
+    {
+      "id": "c6b2d08d-23cf-4d87-8067-03b383066f1d",
+      "orderId": "96eee390-04a7-49be-bc53-ca230a5109a2",
+      "side": "SELL",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 760,
+      "price": 50,
+      "timestamp": "2026-04-05T02:14:20.731Z"
+    },
+    {
+      "id": "21afb780-aacd-4225-bf87-d98d58120ae8",
+      "orderId": "90ab37c2-31f5-4d01-a5c4-7631add6362d",
+      "side": "BUY",
+      "status": "EXECUTED",
+      "tradedQuantity": 10,
+      "remaining": 0,
+      "price": 50,
+      "timestamp": "2026-04-05T02:54:48.487Z"
+    },
+    {
+      "id": "828bd364-f048-4e97-b5ae-542ab6850788",
+      "orderId": "a7e53510-3a35-4ba9-bd07-3bc1f1665347",
+      "side": "SELL",
+      "status": "PARTIAL",
+      "tradedQuantity": 10,
+      "remaining": 158,
+      "price": 48.9,
+      "timestamp": "2026-04-05T02:54:48.487Z"
+    },
+    {
+      "id": "27de5505-2660-4546-8539-daea41924466",
+      "orderId": "7ed26874-ec2b-4351-8059-a3e25917215a",
+      "side": "BUY",
+      "status": "CANCELLED",
+      "tradedQuantity": 0,
+      "remaining": 210,
+      "price": 44,
+      "timestamp": "2026-04-05T02:57:38.573Z"
     }
   ]
 }
