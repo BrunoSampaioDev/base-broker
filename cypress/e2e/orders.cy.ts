@@ -25,10 +25,16 @@ function fillOrderForm(
 
 describe("Base Broker - Orders Flow", () => {
   beforeEach(() => {
-    cy.visit("/", { failOnStatusCode: false, timeout: 30000 });
-    cy.window({ timeout: 10000 }).should("exist");
-    cy.wait(2000);
-    cy.get("body", { timeout: 10000 }).should("exist");
+    cy.request({
+      url: "/",
+      timeout: 60000,
+      retryOnNetworkFailure: true,
+      retryOnStatusCodeFailure: true,
+    });
+
+    cy.visit("/", { failOnStatusCode: false, timeout: 60000 });
+    cy.window({ timeout: 20000 }).should("exist");
+    cy.get("body", { timeout: 20000 }).should("be.visible");
   });
 
   describe("Create Order", () => {
@@ -191,6 +197,7 @@ describe("Base Broker - Orders Flow", () => {
       cy.get("tbody tr", { timeout: 10000 })
         .first()
         .find("button")
+        .last()
         .click({ force: true });
       cy.contains("Histórico da Ordem", { timeout: 10000 }).should(
         "be.visible",
@@ -213,6 +220,10 @@ describe("Base Broker - Orders Flow", () => {
       cy.contains("Ordem cancelada com sucesso", { timeout: 10000 }).should(
         "be.visible",
       );
+
+      // O status da lista eh atualizado apenas quando o drawer fecha.
+      cy.get("body").type("{esc}");
+      cy.contains("Histórico da Ordem", { timeout: 5000 }).should("not.exist");
 
       cy.get("@orderShortId").then((orderShortId) => {
         const id = String(orderShortId).trim();
@@ -237,6 +248,7 @@ describe("Base Broker - Orders Flow", () => {
       cy.get("tbody tr", { timeout: 10000 })
         .first()
         .find("button")
+        .last()
         .click({ force: true });
       cy.contains("Histórico da Ordem", { timeout: 10000 }).should(
         "be.visible",
@@ -271,6 +283,7 @@ describe("Base Broker - Orders Flow", () => {
       cy.get("tbody tr", { timeout: 10000 })
         .first()
         .find("button")
+        .last()
         .click({ force: true });
       cy.contains("Histórico da Ordem", { timeout: 10000 }).should(
         "be.visible",
@@ -296,6 +309,7 @@ describe("Base Broker - Orders Flow", () => {
       cy.get("tbody tr", { timeout: 10000 })
         .first()
         .find("button")
+        .last()
         .click({ force: true });
       cy.contains("Histórico da Ordem", { timeout: 10000 }).should(
         "be.visible",

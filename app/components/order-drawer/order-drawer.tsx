@@ -10,9 +10,11 @@ import { OrderTimeLine } from "./order-time-line";
 import type { Order } from "@/app/types/order";
 import { CancelOrderConfirmation } from "./order-cancel-confirmation";
 import { useState } from "react";
+import { useQueryClient } from "@tanstack/react-query";
 
 export function OrderDrawer({ order }: { order: Order }) {
   const [openModalConfirmation, setOpenModalConfirmation] = useState(false);
+  const queryClient = useQueryClient();
 
   return (
     <>
@@ -21,7 +23,15 @@ export function OrderDrawer({ order }: { order: Order }) {
         onClose={setOpenModalConfirmation}
         orderId={order.id}
       />
-      <Drawer.Root closeOnInteractOutside={false} modal={false}>
+      <Drawer.Root
+        closeOnInteractOutside={false}
+        modal={false}
+        onOpenChange={(details) => {
+          if (!details.open) {
+            queryClient.refetchQueries({ queryKey: ["orders"] });
+          }
+        }}
+      >
         <Drawer.Trigger asChild>
           <IconButton rounded="full" variant="plain" size="xs">
             <FaRegEdit />
