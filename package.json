@@ -10,7 +10,10 @@
     "lint": "eslint",
     "server": "node json-server/server.js",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "e2e": "cypress run",
+    "e2e:open": "cypress open",
+    "e2e:ci": "start-server-and-test dev:all http://localhost:3000 e2e"
   },
   "dependencies": {
     "@chakra-ui/charts": "^3.34.0",
@@ -40,12 +43,15 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cypress": "^15.13.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
+    "start-server-and-test": "^3.0.0",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wait-on": "^9.0.4"
   }
 }
