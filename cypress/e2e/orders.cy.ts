@@ -251,6 +251,22 @@ describe("Base Broker - Orders Flow", () => {
   });
 
   describe("Filter Orders", () => {
+    function submitFilterForm() {
+      cy.get("form", { timeout: 10000 })
+        .eq(2)
+        .within(() => {
+          cy.get('button[type="submit"]').first().click({ force: true });
+        });
+    }
+
+    function submitClearFiltersForm() {
+      cy.get("form", { timeout: 10000 })
+        .eq(2)
+        .within(() => {
+          cy.get('button[type="submit"]').eq(1).click({ force: true });
+        });
+    }
+
     beforeEach(() => {
       fillOrderForm("BUY", "TAEE11", "300", "3200");
       cy.get("tbody tr", { timeout: 10000 })
@@ -261,12 +277,17 @@ describe("Base Broker - Orders Flow", () => {
 
     it("should filter by ticker", () => {
       cy.get('input[placeholder="Ticker"]', { timeout: 5000 }).type("TAEE11");
-      cy.contains("button", "Filtrar", { timeout: 5000 }).click();
+      submitFilterForm();
 
-      cy.get("tbody tr", { timeout: 10000 }).each(($row) => {
-        cy.wrap($row)
-          .contains(/TAEE11/i)
-          .should("exist");
+      cy.get("tbody tr", { timeout: 10000 }).should(($rows) => {
+        const hasRows = $rows.length > 0;
+        const allRowsContainTicker = [...$rows].every((row) =>
+          (row.textContent ?? "").toUpperCase().includes("TAEE11"),
+        );
+
+        if (!hasRows || !allRowsContainTicker) {
+          throw new Error("Tabela ainda nao refletiu apenas ordens de TAEE11");
+        }
       });
     });
 
@@ -277,7 +298,7 @@ describe("Base Broker - Orders Flow", () => {
         .click({ force: true });
       cy.get("[role='option']").contains("Compra").click({ force: true });
 
-      cy.contains("button", "Filtrar", { timeout: 5000 }).click();
+      submitFilterForm();
 
       cy.get("tbody tr", { timeout: 10000 }).each(($row) => {
         cy.wrap($row).contains("Compra").should("exist");
@@ -291,7 +312,7 @@ describe("Base Broker - Orders Flow", () => {
         .click({ force: true });
       cy.get("[role='option']").contains("Aberta").click({ force: true });
 
-      cy.contains("button", "Filtrar", { timeout: 5000 }).click();
+      submitFilterForm();
 
       cy.get("tbody tr", { timeout: 10000 }).each(($row) => {
         cy.wrap($row).contains("Aberta").should("exist");
@@ -300,10 +321,10 @@ describe("Base Broker - Orders Flow", () => {
 
     it("should clear filters and show all orders", () => {
       cy.get('input[placeholder="Ticker"]', { timeout: 5000 }).type("TAEE11");
-      cy.contains("button", "Filtrar", { timeout: 5000 }).click();
+      submitFilterForm();
       cy.get("tbody tr", { timeout: 10000 }).should("have.length.lessThan", 10);
 
-      cy.contains("button", "Limpar Filtros", { timeout: 5000 }).click();
+      submitClearFiltersForm();
       cy.get("tbody tr", { timeout: 10000 }).should(
         "have.length.greaterThan",
         0,
