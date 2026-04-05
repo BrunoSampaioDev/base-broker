@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Button } from "@chakra-ui/react";
 import { OrderDrawer } from "../order-drawer/order-drawer";
 import type { Order } from "@/app/types/order";
 import { format } from "@/app/helpers/formaters";
@@ -10,6 +10,7 @@ import {
   type SortDirection,
   type SortField,
 } from "./order-table-head";
+import { toaster } from "../ui/toaster";
 
 type OrdersTableContentProps = {
   data: Order[] | [];
@@ -27,6 +28,14 @@ export function OrdersTableContent({ data }: OrdersTableContentProps) {
 
     setSortedBy(field);
     setSortDirection("asc");
+  }
+
+  function handleCopyToClipboard(orderId: string) {
+    navigator.clipboard.writeText(orderId);
+    toaster.create({
+      title: "ID da ordem copiado para área de transferência",
+      type: "success",
+    });
   }
 
   const sortedOrders = useMemo(() => {
@@ -76,7 +85,14 @@ export function OrdersTableContent({ data }: OrdersTableContentProps) {
               _hover={{ bg: "#2E2E3E" }}
             >
               <Box as="td" p="1" color="white.500">
-                {order.id.slice(0, 8)}
+                <Button
+                  bg="transparent"
+                  size="xs"
+                  style={{ padding: "0", height: "auto", color: "white" }}
+                  onClick={() => handleCopyToClipboard(order.id)}
+                >
+                  {order.id.slice(0, 8)}
+                </Button>
               </Box>
               <Box as="td" p="1" color="white.500">
                 {order.instrument}
