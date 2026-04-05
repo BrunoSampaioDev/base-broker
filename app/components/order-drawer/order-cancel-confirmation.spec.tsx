@@ -3,8 +3,14 @@ import userEvent from "@testing-library/user-event";
 import { CancelOrderConfirmation } from "./order-cancel-confirmation";
 import { withSetup } from "@/app/test/helpers/with-setup";
 import { cancelOrder } from "@/app/services/cancel-order";
+import { toaster } from "@/app/components/ui/toaster";
 
 jest.mock("../../services/cancel-order");
+jest.mock("../../components/ui/toaster", () => ({
+  toaster: {
+    create: jest.fn(),
+  },
+}));
 
 const mockCancelOrder = cancelOrder as jest.MockedFunction<typeof cancelOrder>;
 
@@ -175,5 +181,62 @@ describe("CancelOrderConfirmation", () => {
         name: /cancelar ordem/i,
       }),
     ).toBeInTheDocument();
+  });
+
+  it("should call toaster.create on successful cancellation", async () => {
+    const user = userEvent.setup();
+    const mockToasterCreate = jest.spyOn(toaster, "create");
+
+    renderComponent();
+
+    await user.type(
+      screen.getByPlaceholderText(/digite qualquer coisa para confirmar/i),
+      "confirmation",
+    );
+
+    await user.click(
+      screen.getByRole("button", {
+        name: /cancelar ordem/i,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(mockToasterCreate).toHaveBeenCalledWith({
+        title: "Ordem cancelada com sucesso",
+        description: expect.stringContaining("order-123"),
+        type: "success",
+      });
+    });
+
+    mockToasterCreate.mockRestore();
+  });
+
+  it("should call toaster.create on cancellation error", async () => {
+    const user = userEvent.setup();
+    const mockToasterCreate = jest.spyOn(toaster, "create");
+    mockCancelOrder.mockRejectedValue(new Error("Cancellation failed"));
+
+    renderComponent();
+
+    await user.type(
+      screen.getByPlaceholderText(/digite qualquer coisa para confirmar/i),
+      "confirmation",
+    );
+
+    await user.click(
+      screen.getByRole("button", {
+        name: /cancelar ordem/i,
+      }),
+    );
+
+    await waitFor(() => {
+      expect(mockToasterCreate).toHaveBeenCalledWith({
+        title: "Erro ao cancelar ordem",
+        description: expect.stringContaining("order-123"),
+        type: "error",
+      });
+    });
+
+    mockToasterCreate.mockRestore();
   });
 });

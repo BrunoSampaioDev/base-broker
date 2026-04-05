@@ -12,6 +12,7 @@ import {
 import { ErrorMessage } from "@hookform/error-message";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
+import { toaster } from "../ui/toaster";
 
 export function CancelOrderConfirmation({
   open,
@@ -34,6 +35,18 @@ export function CancelOrderConfirmation({
     onSuccess: () => {
       queryClient.refetchQueries({ queryKey: ["orders"] });
       queryClient.refetchQueries({ queryKey: ["history", orderId] });
+      toaster.create({
+        title: "Ordem cancelada com sucesso",
+        description: `Ordem cancelada com sucesso. ID: ${orderId}`,
+        type: "success",
+      });
+    },
+    onError: () => {
+      toaster.create({
+        title: "Erro ao cancelar ordem",
+        description: `Não foi possível cancelar a ordem. ID: ${orderId}`,
+        type: "error",
+      });
     },
   });
 

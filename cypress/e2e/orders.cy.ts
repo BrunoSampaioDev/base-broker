@@ -35,6 +35,13 @@ describe("Base Broker - Orders Flow", () => {
     it("should create a BUY order successfully", () => {
       fillOrderForm("BUY", "PETR4", "100", "4300");
 
+      cy.contains("Ordem criada com sucesso", { timeout: 10000 }).should(
+        "be.visible",
+      );
+      cy.contains("Ordem de Compra para PETR4 criada com sucesso!", {
+        timeout: 10000,
+      }).should("be.visible");
+
       cy.get("tbody tr", { timeout: 10000 })
         .first()
         .within(() => {
@@ -54,6 +61,22 @@ describe("Base Broker - Orders Flow", () => {
           cy.contains("Venda").should("exist");
           cy.contains("Aberta").should("exist");
         });
+    });
+
+    it("should show an error toast when order creation fails", () => {
+      cy.intercept("POST", "http://localhost:3001/orders", {
+        forceNetworkError: true,
+      }).as("createOrderFailure");
+
+      fillOrderForm("BUY", "PETR4", "100", "4300");
+
+      cy.wait("@createOrderFailure");
+      cy.contains("Erro ao criar ordem", { timeout: 10000 }).should(
+        "be.visible",
+      );
+      cy.contains("Não foi possível criar a ordem de Compra para PETR4.", {
+        timeout: 10000,
+      }).should("be.visible");
     });
 
     it("should reject invalid ticker format", () => {
@@ -187,11 +210,60 @@ describe("Base Broker - Orders Flow", () => {
         force: true,
       });
 
+      cy.contains("Ordem cancelada com sucesso", { timeout: 10000 }).should(
+        "be.visible",
+      );
+
       cy.get("@orderShortId").then((orderShortId) => {
         const id = String(orderShortId).trim();
         cy.contains("tbody tr", id, { timeout: 10000 }).within(() => {
           cy.contains("Cancelada").should("exist");
         });
+      });
+    });
+
+    it("should show an error toast when cancellation fails", () => {
+      cy.intercept("PATCH", "http://localhost:3001/orders/*/cancel", {
+        forceNetworkError: true,
+      }).as("cancelOrderFailure");
+
+      cy.get("tbody tr", { timeout: 10000 })
+        .first()
+        .find("td")
+        .first()
+        .invoke("text")
+        .as("orderShortId");
+
+      cy.get("tbody tr", { timeout: 10000 })
+        .first()
+        .find("button")
+        .click({ force: true });
+      cy.contains("Histórico da Ordem", { timeout: 10000 }).should(
+        "be.visible",
+      );
+
+      cy.contains("button", /cancelar ordem/i, { timeout: 5000 }).click({
+        force: true,
+      });
+      cy.contains("Cancelamento de ordem", { timeout: 5000 }).should(
+        "be.visible",
+      );
+
+      cy.get('[role="dialog"] input[type="password"]', { timeout: 5000 }).type(
+        "minha-assinatura",
+      );
+      cy.get('[role="dialog"] button[type="submit"]', { timeout: 5000 }).click({
+        force: true,
+      });
+
+      cy.wait("@cancelOrderFailure");
+      cy.contains("Erro ao cancelar ordem", { timeout: 10000 }).should(
+        "be.visible",
+      );
+      cy.get("@orderShortId").then((orderShortId) => {
+        cy.contains(`ID: ${String(orderShortId).trim()}`, {
+          timeout: 10000,
+        }).should("be.visible");
       });
     });
 
