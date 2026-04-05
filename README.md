@@ -185,6 +185,7 @@ Regras de negócio:
   - refetch de `orders` para atualizar os dados da tabela de ordens
   - refetch de `orderBook` para atualizar os dados do livro de ordens
   - reset do formulário
+  - exibe um toast com a informação de sucesso ou erro na execução do cancelamento da ordem
 
 Integrações:
 
@@ -380,6 +381,7 @@ Regras de negócio:
   - refetch de `orders` para atualizar dados da tabela
   - refetch de `history` para atualizar histórico da ordem
   - fecha a modal
+  - exibe um toast com a informação de sucesso ou erro na execução da ordem
 - modal fecha ao clicar em "Fechar", botão X ou pressionar Esc
 
 Integração com API:

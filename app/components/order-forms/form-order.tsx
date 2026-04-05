@@ -8,6 +8,8 @@ import { masks } from "@/app/helpers/masks";
 import type { Order } from "@/app/types/order";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useEffect } from "react";
+import { toaster } from "../ui/toaster";
+import { format } from "@/app/helpers/formaters";
 
 interface OrderFormFiels {
   instrument: string;
@@ -39,15 +41,26 @@ export function OrderForm({ side }: { side: Order["side"] }) {
     });
   }
 
+  const instrument = watch("instrument");
+
   const createOrderMutation = useMutation({
     mutationFn: (order: OrderFormFiels) => createOrder({ ...order, side }),
     onSuccess: () => {
       queryClient.refetchQueries({ queryKey: ["orders"] });
       queryClient.refetchQueries({ queryKey: ["orderBook"] });
       resetForm();
+      toaster.create({
+        title: "Ordem criada com sucesso",
+        description: `Ordem de ${format.side(side).side} para ${instrument} criada com sucesso!`,
+        type: "success",
+      });
     },
-    onError: (error) => {
-      console.error("Erro ao criar ordem:", error); // [TO-DO] Exibir mensagem de erro para o usuário utilizando um toast ou componente similar
+    onError: () => {
+      toaster.create({
+        title: "Erro ao criar ordem",
+        description: `Não foi possível criar a ordem de ${format.side(side).side} para ${instrument}.`,
+        type: "error",
+      });
     },
   });
 
