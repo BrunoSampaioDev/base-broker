@@ -54,7 +54,7 @@
 - json-server
 - TradingView widget embed
 
-## Como executar
+## Como rodar o projeto
 
 Instale as dependências:
 
@@ -99,6 +99,35 @@ npm run test
 #### Cobertura de testes atual
 
 ![Cobertura de testes](.github/images/coverage.png)
+
+## Executando testes e2e
+
+#### Modo Headless (CLI)
+
+```bash
+# Inicia app + servidor e roda testes automaticamente ( Recomendado )
+npm run e2e:ci
+
+# Roda os testes diretamente (app deve estar rodando)
+npm run e2e
+
+# Roda E2E e gera relatório de coverage
+npm run e2e:coverage
+```
+
+### Modo Interativo (Visual)
+
+```bash
+# Terminal 1: Inicia app + servidor
+npm run dev:all
+
+# Terminal 2: Roda o Cypress no modo interativo
+npm run e2e:open
+```
+
+#### Cobertura de testes e2e atual
+
+![Cobertura de testes](.github/images/e2e-coverage.png)
 
 ## Estrutura funcional
 
