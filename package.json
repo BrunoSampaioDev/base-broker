@@ -13,7 +13,10 @@
     "test:coverage": "jest --coverage",
     "e2e": "cypress run",
     "e2e:open": "cypress open",
-    "e2e:ci": "start-server-and-test dev:all http://localhost:3000 e2e"
+    "e2e:ci": "start-server-and-test dev:all http://localhost:3000 e2e",
+    "e2e:coverage": "npm run clean:e2e:coverage && cross-env CYPRESS_COVERAGE=true start-server-and-test dev:all http://localhost:3000 \"npm run e2e && npm run coverage:e2e:report\"",
+    "coverage:e2e:report": "nyc report --temp-dir .nyc_output --report-dir coverage/e2e --reporter=text-summary --reporter=html",
+    "clean:e2e:coverage": "rm -rf .nyc_output coverage/e2e"
   },
   "dependencies": {
     "@chakra-ui/charts": "^3.34.0",
@@ -34,6 +37,7 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
+    "@cypress/code-coverage": "^4.0.3",
     "@tailwindcss/postcss": "^4",
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
@@ -43,15 +47,38 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "babel-plugin-istanbul": "^7.0.1",
+    "cross-env": "^10.1.0",
     "cypress": "^15.13.0",
     "eslint": "^9",
     "eslint-config-next": "16.2.1",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
+    "nyc": "^18.0.0",
     "start-server-and-test": "^3.0.0",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
     "typescript": "^5",
     "wait-on": "^9.0.4"
+  },
+  "nyc": {
+    "all": true,
+    "sourceMap": true,
+    "instrument": false,
+    "extension": [
+      ".ts",
+      ".tsx",
+      ".js",
+      ".jsx"
+    ],
+    "include": [
+      "app/**/*.{ts,tsx,js,jsx}"
+    ],
+    "exclude": [
+      "**/*.spec.*",
+      "**/*.cy.*",
+      "**/test/**",
+      "**/types/**"
+    ]
   }
 }
