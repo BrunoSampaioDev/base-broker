@@ -18,10 +18,12 @@ export function CancelOrderConfirmation({
   open,
   onClose,
   orderId,
+  disableCancelButton,
 }: {
   open: boolean;
   onClose: (value: boolean) => void;
   orderId: string;
+  disableCancelButton: () => void;
 }) {
   const {
     handleSubmit,
@@ -39,6 +41,7 @@ export function CancelOrderConfirmation({
         description: `Ordem cancelada com sucesso. ID: ${orderId}`,
         type: "success",
       });
+      disableCancelButton();
     },
     onError: () => {
       toaster.create({

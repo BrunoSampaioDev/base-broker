@@ -34,7 +34,7 @@ describe("OrderDrawer", () => {
   });
 
   it("should disable cancel button for executed and cancelled orders", () => {
-    const { rerender } = render(
+    const { unmount } = render(
       withSetup(<OrderDrawer order={order.withStatus("EXECUTED").build()} />),
     );
 
@@ -42,7 +42,9 @@ describe("OrderDrawer", () => {
       screen.getByRole("button", { name: "Cancelar ordem" }),
     ).toBeDisabled();
 
-    rerender(
+    unmount();
+
+    render(
       withSetup(<OrderDrawer order={order.withStatus("CANCELLED").build()} />),
     );
 

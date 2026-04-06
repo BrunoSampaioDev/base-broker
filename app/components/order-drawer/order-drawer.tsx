@@ -15,6 +15,7 @@ import { useQueryClient } from "@tanstack/react-query";
 export function OrderDrawer({ order }: { order: Order }) {
   const [openModalConfirmation, setOpenModalConfirmation] = useState(false);
   const queryClient = useQueryClient();
+  const [disableCancelButton, setDisableCancelButton] = useState(false);
 
   return (
     <>
@@ -22,6 +23,7 @@ export function OrderDrawer({ order }: { order: Order }) {
         open={openModalConfirmation}
         onClose={setOpenModalConfirmation}
         orderId={order.id}
+        disableCancelButton={() => setDisableCancelButton(true)}
       />
       <Drawer.Root
         closeOnInteractOutside={false}
@@ -54,7 +56,9 @@ export function OrderDrawer({ order }: { order: Order }) {
                   color="white"
                   _hover={{ bg: "red.600" }}
                   disabled={
-                    order.status === "EXECUTED" || order.status === "CANCELLED"
+                    disableCancelButton ||
+                    order.status === "EXECUTED" ||
+                    order.status === "CANCELLED"
                   }
                 >
                   Cancelar ordem
