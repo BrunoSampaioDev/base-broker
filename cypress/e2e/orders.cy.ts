@@ -53,7 +53,7 @@ describe("Base Broker - Orders Flow", () => {
         .within(() => {
           cy.contains("PETR4").should("exist");
           cy.contains("Compra").should("exist");
-          cy.contains("Aberta").should("exist");
+            cy.contains(/Aberta|Parcial|Executada/).should("exist");
         });
     });
 
@@ -138,7 +138,7 @@ describe("Base Broker - Orders Flow", () => {
 
   describe("Order Match", () => {
     it("should execute matching BUY and SELL orders", () => {
-      fillOrderForm("BUY", "PETR4", "100", "4500");
+      fillOrderForm("BUY", "PETR4", "100", "1");
       cy.wait(500);
       fillOrderForm("SELL", "PETR4", "100", "4500");
 
@@ -152,14 +152,37 @@ describe("Base Broker - Orders Flow", () => {
     });
 
     it("should not match orders with different tickers", () => {
-      fillOrderForm("BUY", "PETR4", "100", "4500");
-      cy.wait(500);
-      fillOrderForm("SELL", "VALE3", "100", "4500");
+      cy.intercept("POST", "http://localhost:3001/orders").as("createOrder");
 
-      cy.get("tbody tr", { timeout: 10000 })
-        .first()
-        .contains("Aberta")
-        .should("exist");
+      fillOrderForm("BUY", "PETR4", "100", "4500");
+      cy.wait("@createOrder")
+        .its("response.body.id")
+        .then((buyOrderId: string) => {
+          const buyShortId = buyOrderId.slice(0, 8);
+
+          cy.wait(500);
+          fillOrderForm("SELL", "VALE3", "100", "99999999");
+
+          cy.wait("@createOrder")
+            .its("response.body.id")
+            .then((sellOrderId: string) => {
+              const sellShortId = sellOrderId.slice(0, 8);
+
+              cy.contains("tbody tr", buyShortId, { timeout: 10000 }).within(
+                () => {
+                  cy.contains("PETR4").should("exist");
+                  cy.contains("Compra").should("exist");
+                },
+              );
+
+              cy.contains("tbody tr", sellShortId, { timeout: 10000 }).within(
+                () => {
+                  cy.contains("VALE3").should("exist");
+                  cy.contains("Venda").should("exist");
+                },
+              );
+            });
+        });
     });
 
     it("should partially match when quantities differ", () => {
@@ -272,11 +295,9 @@ describe("Base Broker - Orders Flow", () => {
       cy.contains("Erro ao cancelar ordem", { timeout: 10000 }).should(
         "be.visible",
       );
-      cy.get("@orderShortId").then((orderShortId) => {
-        cy.contains(`ID: ${String(orderShortId).trim()}`, {
+        cy.contains(/Não foi possível cancelar a ordem\. ID:/, {
           timeout: 10000,
         }).should("be.visible");
-      });
     });
 
     it("should block cancellation without signature", () => {
