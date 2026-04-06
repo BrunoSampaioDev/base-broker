@@ -14,12 +14,14 @@ describe("CancelOrderConfirmation", () => {
     jest.clearAllMocks();
   });
 
+  const disableCancelButtonMock = jest.fn();
   const renderComponent = (props = {}) => {
     const defaultProps = {
       open: true,
       onClose: jest.fn(),
-      orderId: "order-123",
+      orderId: "c9bec752-b224-4209-b925-e5f8de65d399",
       ...props,
+      disableCancelButton: disableCancelButtonMock,
     };
 
     return render(withSetup(<CancelOrderConfirmation {...defaultProps} />));
@@ -36,7 +38,8 @@ describe("CancelOrderConfirmation", () => {
         <CancelOrderConfirmation
           open={false}
           onClose={jest.fn()}
-          orderId="order-123"
+          orderId="c9bec752-b224-4209-b925-e5f8de65d399"
+          disableCancelButton={disableCancelButtonMock}
         />,
       ),
     );
@@ -52,7 +55,8 @@ describe("CancelOrderConfirmation", () => {
         <CancelOrderConfirmation
           open={true}
           onClose={onClose}
-          orderId="order-123"
+          orderId="c9bec752-b224-4209-b925-e5f8de65d399"
+          disableCancelButton={disableCancelButtonMock}
         />,
       ),
     );
@@ -112,7 +116,10 @@ describe("CancelOrderConfirmation", () => {
     await user.click(submitButton);
 
     await waitFor(() => {
-      expect(mockCancelOrder).toHaveBeenCalledWith("order-123");
+      expect(mockCancelOrder).toHaveBeenCalledWith(
+        "c9bec752-b224-4209-b925-e5f8de65d399",
+      );
+      expect(disableCancelButtonMock).toHaveBeenCalled();
     });
   });
 
@@ -125,7 +132,8 @@ describe("CancelOrderConfirmation", () => {
         <CancelOrderConfirmation
           open={true}
           onClose={onClose}
-          orderId="order-123"
+          orderId="c9bec752-b224-4209-b925-e5f8de65d399"
+          disableCancelButton={disableCancelButtonMock}
         />,
       ),
     );
@@ -198,7 +206,9 @@ describe("CancelOrderConfirmation", () => {
     await waitFor(() => {
       expect(mockToasterCreate).toHaveBeenCalledWith({
         title: "Ordem cancelada com sucesso",
-        description: expect.stringContaining("order-123"),
+        description: expect.stringContaining(
+          "c9bec752-b224-4209-b925-e5f8de65d399",
+        ),
         type: "success",
       });
     });
@@ -227,7 +237,9 @@ describe("CancelOrderConfirmation", () => {
     await waitFor(() => {
       expect(mockToasterCreate).toHaveBeenCalledWith({
         title: "Erro ao cancelar ordem",
-        description: expect.stringContaining("order-123"),
+        description: expect.stringContaining(
+          "c9bec752-b224-4209-b925-e5f8de65d399",
+        ),
         type: "error",
       });
     });
