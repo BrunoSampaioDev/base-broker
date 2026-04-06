@@ -139,6 +139,10 @@ export function OrderForm({ side }: { side: Order["side"] }) {
                 size={"sm"}
                 fontSize="0.8rem"
                 {...field}
+                value={field.value ?? ""}
+                onChange={(event) => {
+                  field.onChange(event.target.value.toUpperCase());
+                }}
                 placeholder="Ex: TAEE11"
                 color="whiteAlpha.600"
                 background="whiteAlpha.50"
