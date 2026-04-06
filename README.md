@@ -42,6 +42,12 @@
   - [Masks](#masks)
 - [Resumo final](#resumo-final)
 
+## Por favor assista! (Demonstração)
+
+Clique na imagem abaixo para assistir ao vídeo no YouTube:
+
+[![Demo do projeto](https://img.youtube.com/vi/rcOppDwUmsQ/hqdefault.jpg)](https://www.youtube.com/watch?v=rcOppDwUmsQ)
+
 ## Stack técnica
 
 - Node 24.14.0
