@@ -1,8 +1,10 @@
 "use client";
 
 import { Flex } from "@chakra-ui/react";
-import { OrderForm, OrderBook, StockChart, OrdersTable } from "./components";
-import { Toaster } from "@/app/components/ui/toaster";
+import { OrderBook } from "@/modules/order-book";
+import { OrderForm, OrdersTable } from "@/modules/orders";
+import { StockChart } from "@/modules/market";
+import { Toaster } from "@/modules/shared";
 
 export default function Dashboard() {
   return (
