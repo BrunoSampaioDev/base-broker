@@ -1,4 +1,4 @@
-# Base Broker
+# Teste técnico - Base Broker
 
 Dashboard de operações: livro de ofertas, execução de ordens (com motor de matching), histórico e gráfico de ativo. Teste técnico para a BASE.
 
