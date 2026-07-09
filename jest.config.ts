@@ -14,13 +14,13 @@ const config: Config = {
   },
   collectCoverageFrom: [
     "app/**/*.{ts,tsx}",
-    "!app/test/**",
+    "modules/**/*.{ts,tsx}",
     "!app/layout.tsx",
     "!app/page.tsx",
-    "!app/types/**",
-    "!app/components/index.tsx",
+    "!modules/**/types/**",
+    "!modules/shared/test/**",
   ],
-  coveragePathIgnorePatterns: ["<rootDir>/app/test/"],
+  coveragePathIgnorePatterns: ["<rootDir>/modules/shared/test/"],
 };
 
 export default createJestConfig(config);

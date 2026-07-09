@@ -1071,7 +1071,7 @@
       "side": "BUY",
       "price": 32,
       "quantity": 300,
-      "remaining": 160,
+      "remaining": 60,
       "status": "PARTIAL",
       "createdAt": "2026-04-05T04:17:33.988Z"
     },
@@ -8014,6 +8014,26 @@
       "remaining": 300,
       "status": "OPEN",
       "createdAt": "2026-04-06T01:58:59.835Z"
+    },
+    {
+      "id": "16db4553-62c2-4553-bbed-9f3ad04fca62",
+      "instrument": "PETR4",
+      "side": "BUY",
+      "price": 44,
+      "quantity": 20,
+      "remaining": 20,
+      "status": "OPEN",
+      "createdAt": "2026-07-09T20:00:03.534Z"
+    },
+    {
+      "id": "0df9af89-a0e4-4c59-8ba8-3d0d7542e9da",
+      "instrument": "TAEE11",
+      "side": "SELL",
+      "price": 30,
+      "quantity": 100,
+      "remaining": 0,
+      "status": "EXECUTED",
+      "createdAt": "2026-07-09T20:00:30.207Z"
     }
   ],
   "history": [
@@ -15556,6 +15576,26 @@
       "remaining": 100,
       "price": 0.01,
       "timestamp": "2026-04-06T01:58:32.834Z"
+    },
+    {
+      "id": "af7b0801-d646-4c7f-ad9c-f1320f26d51a",
+      "orderId": "0df9af89-a0e4-4c59-8ba8-3d0d7542e9da",
+      "side": "SELL",
+      "status": "EXECUTED",
+      "tradedQuantity": 100,
+      "remaining": 0,
+      "price": 30,
+      "timestamp": "2026-07-09T20:00:30.232Z"
+    },
+    {
+      "id": "743fa8ad-3170-4b07-bea4-a5fded86c78b",
+      "orderId": "a1cc8ecf-c9ff-438f-9907-26bafdfe2192",
+      "side": "BUY",
+      "status": "PARTIAL",
+      "tradedQuantity": 100,
+      "remaining": 60,
+      "price": 32,
+      "timestamp": "2026-07-09T20:00:30.233Z"
     }
   ]
 }

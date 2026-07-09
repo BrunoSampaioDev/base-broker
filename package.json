@@ -72,7 +72,8 @@
       ".jsx"
     ],
     "include": [
-      "app/**/*.{ts,tsx,js,jsx}"
+      "app/**/*.{ts,tsx,js,jsx}",
+      "modules/**/*.{ts,tsx,js,jsx}"
     ],
     "exclude": [
       "**/*.spec.*",
